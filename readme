@@ -1,5 +1,8 @@
-want to use binlong's code for real time activity recognition
+Want to use binlong's code for real time activity recognition. Plan to use matlab first then gradually change the code into c++
 
-plan to use matlab first then gradually change the code into c++
-
+Folder matlab/ contains matlab code done.
+Folder model/ contains kmeans centers and svm model which are trained from KTH data.
+Folder expData/ contains experiment data
+Folder testVideo/ contains testVideo
+Folder 3rdParty/ contains Heng Wang's dense trajectory code (modified), Fuxin Li's LIBSVM-CHI2 code and Binlong Li's BoH code.
 
