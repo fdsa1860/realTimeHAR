@@ -167,7 +167,7 @@ int main(int argc, char** argv)
 //						for (int i = 0; i < trackInfo.length; ++i)
 //							printf("%f\t%f\t", trajectory[i].x,trajectory[i].y);
 						for (int i = 0; i < trackInfo.length; ++i)
-							printf("%f\t%f\t", trajectory2[i].x,trajectory[i].y);
+							printf("%f\t%f\t", trajectory2[i].x,trajectory2[i].y);
 
 						printf("\n");
 					}

@@ -32,8 +32,8 @@ load('../model/kmeansWords300_action01_06_person01_26_scene01_04_20131118t.mat')
 addpath('/home/xikang/research/code/kthActivity/3rdParty/libsvm-2.9-dense_chi_square_mat');
 load('../model/svmChi2_words300_action01_06_person01_26_scene01_04_20131118t');
 for i=1:length(svmModel)
-    [predict_label, ~, prob_estimates] = svmpredict_chi2(0, hFeat, svmModel{i});
-    [predict_label prob_estimates]
+    [predict_label, ~, ~] = svmpredict_chi2(0, hFeat, svmModel{i});
+    predict_label 
 end
 rmpath('/home/xikang/research/code/kthActivity/3rdParty/libsvm-2.9-dense_chi_square_mat');
 
