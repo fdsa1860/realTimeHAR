@@ -8,11 +8,14 @@ clear;clc;close all;
 C = 10;
 G = 1e-4;
 
+getVideo;
+genTrajectory;
+
 addpath(genpath('../3rdParty/hankelet-master/hankelet-master'));
 addpath(genpath(getProjectBaseFolder));
 
 % load data
-traj = readTrajectory;
+traj = readTrajectory('cache');
 
 % ignore frame number
 X = traj(:,2:end)';
