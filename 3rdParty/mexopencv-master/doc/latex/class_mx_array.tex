@@ -1,0 +1,1761 @@
+\hypertarget{class_mx_array}{\section{\-Mx\-Array \-Class \-Reference}
+\label{class_mx_array}\index{\-Mx\-Array@{\-Mx\-Array}}
+}
+
+
+mx\-Array object wrapper for data conversion and manipulation.  
+
+
+
+
+{\ttfamily \#include $<$\-Mx\-Array.\-hpp$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mx_array_aae465ee9ac1f8b00442b407a9cc56e3a}{\-Mx\-Array} (const mx\-Array $\ast$arr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from mx\-Array$\ast$. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a6f8cdf666ef945f2e26fe64fac9f2aed}{\-Mx\-Array} (const \hyperlink{class_mx_array}{\-Mx\-Array} \&arr)
+\begin{DoxyCompactList}\small\item\em \-Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a833f27871c0785b174e251578daeccc2}{\hyperlink{class_mx_array}{\-Mx\-Array} \& \hyperlink{class_mx_array_a833f27871c0785b174e251578daeccc2}{operator=} (const \hyperlink{class_mx_array}{\-Mx\-Array} \&rhs)}\label{class_mx_array_a833f27871c0785b174e251578daeccc2}
+
+\begin{DoxyCompactList}\small\item\em \-Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a0ec931f3bd676bf735fb0c233d6ed451}{\-Mx\-Array} (const int i)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from int. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a1b3623615402c6e949b03d30e35dea73}{\-Mx\-Array} (const double d)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from double. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a5617fd8f0d2b6b1cea2ede44ab306b98}{\-Mx\-Array} (const bool b)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from bool. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a805f2eb5b095527b50831388e5ba1dc6}{\-Mx\-Array} (const std\-::string \&s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from std\-::string. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_ab4306c5e0791fd624b6038fd8fac3e58}{\-Mx\-Array} (const cv\-::\-Mat \&mat, mx\-Class\-I\-D classid=mx\-U\-N\-K\-N\-O\-W\-N\-\_\-\-C\-L\-A\-S\-S, bool transpose=true)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-Mat to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a4f4dcca25beb643cf8e78a477513a522}{\-Mx\-Array} (const cv\-::\-Sparse\-Mat \&mat)
+\begin{DoxyCompactList}\small\item\em \-Convert float cv\-::\-Sparse\-Mat to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a53bb6d88f1eb9639299ded9f0e371a64}{\-Mx\-Array} (const cv\-::\-Moments \&m)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-Moments to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_aa0d408bf4f1bfaec86b916cfd9f94d41}{\-Mx\-Array} (const cv\-::\-Key\-Point \&p)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-Key\-Point to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a91cfe53794d6b259c5361e0ed92918db}{\-Mx\-Array} (const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&v)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-Key\-Point$>$. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a86c84d476db4160af1f95c575d0dc79a}{\-Mx\-Array} (const cv\-::\-D\-Match \&m)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-D\-Match to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a7af56911425a206c9f1055b09aa48e3e}{\-Mx\-Array} (const std\-::vector$<$ cv\-::\-D\-Match $>$ \&v)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-T$>$. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a1d2ee90b6e776e5e866e0ddf8295c9b7}{\-Mx\-Array} (const cv\-::\-Rotated\-Rect \&m)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-Rotated\-Rect to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_aada2490f2a1f10ac71ba8b1cba5ea4cf}{\-Mx\-Array} (const cv\-::\-Term\-Criteria \&t)
+\begin{DoxyCompactList}\small\item\em \-Convert cv\-::\-Term\-Criteria to \hyperlink{class_mx_array}{\-Mx\-Array}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_a614bce9d9f9ebf0e9dbb49847e4e82ed}{\-Mx\-Array} (const std\-::vector$<$ \-T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_a8407fc80904b6a6fec3d157879cbc87b}{\-Mx\-Array} (const cv\-::\-Point\-\_\-$<$ \-T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Point\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_ab3a3a3b1f58fade86c5ae8ca2ec81dc7}{\-Mx\-Array} (const cv\-::\-Point3\-\_\-$<$ \-T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Point3\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_a2347496d77055a6d52f190b89ffed563}{\-Mx\-Array} (const cv\-::\-Size\-\_\-$<$ \-T $>$ \&s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Size\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_af9af80ce387fd81ab7ae588121e06e45}{\-Mx\-Array} (const cv\-::\-Rect\-\_\-$<$ \-T $>$ \&r)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Rect\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mx_array_ab9fc8869dbb26521f6ddb7c7ac46659e}{\-Mx\-Array} (const cv\-::\-Scalar\-\_\-$<$ \-T $>$ \&s)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Scalar\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a3d79d00a7db91086a7770021ef25ecf2}{\-Mx\-Array} (const char $\ast$$\ast$fields, int \hyperlink{class_mx_array_aaafc4e535b9825a5690f056024cba34a}{nfields}, int m=1, int n=1)
+\begin{DoxyCompactList}\small\item\em \-Generic constructor for a struct array. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mx_array_a4345e9b5971748ec4a7419dab42de4ef}{$\sim$\-Mx\-Array} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array}{\-Mx\-Array} \hyperlink{class_mx_array_a86dda6d0020a5a21c4b7e5f80205a344}{clone} ()
+\begin{DoxyCompactList}\small\item\em \-Clone mx\-Array. \end{DoxyCompactList}\item 
+void \hyperlink{class_mx_array_aeab469ebea779b8e3cf7e07e4459b925}{destroy} ()
+\begin{DoxyCompactList}\small\item\em \-Destroy allocated mx\-Array. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_a4b2de94745c1f0ae157e554b1bdbe1af}{operator const mx\-Array $\ast$} () const 
+\begin{DoxyCompactList}\small\item\em \-Implicit conversion to const mx\-Array$\ast$. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array_aed90283d5d07e0e4973cc9ac8b431d32}{operator mx\-Array $\ast$} () const 
+\begin{DoxyCompactList}\small\item\em \-Implicit conversion to mx\-Array$\ast$. \end{DoxyCompactList}\item 
+int \hyperlink{class_mx_array_a438400755505700235e1c71fa9a42354}{to\-Int} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to int. \end{DoxyCompactList}\item 
+double \hyperlink{class_mx_array_acadee15dcabd9a224cb0d5380d88e44d}{to\-Double} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to double. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mx_array_abb072870a2ae6145f4407f67c5160625}{to\-Bool} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to bool. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_mx_array_a9681920ceef511509f37a880be0acb7c}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::string. \end{DoxyCompactList}\item 
+cv\-::\-Mat \hyperlink{class_mx_array_a4c5bfc695872e880917a22d16fb8d6da}{to\-Mat} (int depth=\-C\-V\-\_\-\-U\-S\-R\-T\-Y\-P\-E1, bool transpose=true) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Mat. \end{DoxyCompactList}\item 
+cv\-::\-Mat\-N\-D \hyperlink{class_mx_array_accc1e81c0535e2861c8fb9eabc7672cb}{to\-Mat\-N\-D} (int depth=\-C\-V\-\_\-\-U\-S\-R\-T\-Y\-P\-E1, bool transpose=true) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to a single-\/channel cv\-::\-Mat. \end{DoxyCompactList}\item 
+cv\-::\-Sparse\-Mat \hyperlink{class_mx_array_a156c50d54516981571b6d8ecc5c4f67c}{to\-Sparse\-Mat} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert double sparse \hyperlink{class_mx_array}{\-Mx\-Array} to float cv\-::\-Sparse\-Mat. \end{DoxyCompactList}\item 
+cv\-::\-Moments \hyperlink{class_mx_array_a7a29709ed5e6a729cba3866ecaee9ef8}{to\-Moments} (mw\-Index index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Moments. \end{DoxyCompactList}\item 
+cv\-::\-Key\-Point \hyperlink{class_mx_array_a3ba20a9d62919589acb3754a064383a4}{to\-Key\-Point} (mw\-Index index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Key\-Point. \end{DoxyCompactList}\item 
+cv\-::\-D\-Match \hyperlink{class_mx_array_ab915c6440ba75477bad6529c4ef6b335}{to\-D\-Match} (mw\-Index index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-D\-Match. \end{DoxyCompactList}\item 
+cv\-::\-Range \hyperlink{class_mx_array_a0965c929ef9fb993fb489fce56e7df1e}{to\-Range} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Range. \end{DoxyCompactList}\item 
+cv\-::\-Term\-Criteria \hyperlink{class_mx_array_a257afd9a6fc3e920b89f6957291709f1}{to\-Term\-Criteria} (mw\-Index index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Term\-Criteria. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cv\-::\-Point\-\_\-$<$ \-T $>$ \hyperlink{class_mx_array_a0b0fff290d0fbc366f0a2fb87858d6a3}{to\-Point\-\_\-} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Point\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cv\-::\-Point3\-\_\-$<$ \-T $>$ \hyperlink{class_mx_array_a0204a491fbf67ad52e940b53ec177deb}{to\-Point3\-\_\-} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Point3\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cv\-::\-Size\-\_\-$<$ \-T $>$ \hyperlink{class_mx_array_aed962953548537fd8679dc2f6ad3e45c}{to\-Size\-\_\-} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Size\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cv\-::\-Rect\-\_\-$<$ \-T $>$ \hyperlink{class_mx_array_a6d5cab098423479d39258ae99f16017e}{to\-Rect\-\_\-} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Rect\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cv\-::\-Scalar\-\_\-$<$ \-T $>$ \hyperlink{class_mx_array_a1178e6229938695335f2c808b8d01a25}{to\-Scalar\-\_\-} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Scalar\-\_\-$<$\-T$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::vector$<$ \-T $>$ \hyperlink{class_mx_array_adaae9b7207e082bbe0d7b1677da0b7d0}{to\-Vector} () const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-T$>$ for a primitive type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::vector$<$ \-T $>$ \hyperlink{class_mx_array_af5179460954b17e074a402aaf6c3ee92}{to\-Vector} (std\-::const\-\_\-mem\-\_\-fun\-\_\-ref\-\_\-t$<$ \-T, \hyperlink{class_mx_array}{\-Mx\-Array} $>$ f) const 
+\begin{DoxyCompactList}\small\item\em \-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-T$>$ by a specified conversion method. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a34c6814bdfa48be8095c16275177ede7}{cv\-::\-Point \hyperlink{class_mx_array_a34c6814bdfa48be8095c16275177ede7}{to\-Point} () const }\label{class_mx_array_a34c6814bdfa48be8095c16275177ede7}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Point\-\_\-$<$int$>$. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a895a1657279870138bd9e3a6daa6d32f}{cv\-::\-Point2f \hyperlink{class_mx_array_a895a1657279870138bd9e3a6daa6d32f}{to\-Point2f} () const }\label{class_mx_array_a895a1657279870138bd9e3a6daa6d32f}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Point\-\_\-$<$float$>$. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ad0cbbe2029ce63a2440ca54bd1cfb708}{cv\-::\-Point3f \hyperlink{class_mx_array_ad0cbbe2029ce63a2440ca54bd1cfb708}{to\-Point3f} () const }\label{class_mx_array_ad0cbbe2029ce63a2440ca54bd1cfb708}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Point3\-\_\-$<$float$>$. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a864e571ddfacc211ba330ab6f1831143}{cv\-::\-Size \hyperlink{class_mx_array_a864e571ddfacc211ba330ab6f1831143}{to\-Size} () const }\label{class_mx_array_a864e571ddfacc211ba330ab6f1831143}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Size\-\_\-$<$int$>$. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_acb128e80b73884e962fb4d154585021f}{cv\-::\-Rect \hyperlink{class_mx_array_acb128e80b73884e962fb4d154585021f}{to\-Rect} () const }\label{class_mx_array_acb128e80b73884e962fb4d154585021f}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Rect\-\_\-$<$int$>$. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_abee7abd588fe00083f43200a1b6dcf94}{cv\-::\-Scalar \hyperlink{class_mx_array_abee7abd588fe00083f43200a1b6dcf94}{to\-Scalar} () const }\label{class_mx_array_abee7abd588fe00083f43200a1b6dcf94}
+
+\begin{DoxyCompactList}\small\item\em \-Alias to to\-Scalar\-\_\-$<$double$>$ \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aa351ac3bb2cb381d72610509140cea97}{mx\-Class\-I\-D \hyperlink{class_mx_array_aa351ac3bb2cb381d72610509140cea97}{class\-I\-D} () const }\label{class_mx_array_aa351ac3bb2cb381d72610509140cea97}
+
+\begin{DoxyCompactList}\small\item\em \-Class \-I\-D of mx\-Array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ad53a93b215411e6d62ae5f529ed9186e}{const std\-::string \hyperlink{class_mx_array_ad53a93b215411e6d62ae5f529ed9186e}{class\-Name} () const }\label{class_mx_array_ad53a93b215411e6d62ae5f529ed9186e}
+
+\begin{DoxyCompactList}\small\item\em \-Class name of mx\-Array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ac8b8c81c57bec6f975138f292ad40cd0}{mw\-Size \hyperlink{class_mx_array_ac8b8c81c57bec6f975138f292ad40cd0}{numel} () const }\label{class_mx_array_ac8b8c81c57bec6f975138f292ad40cd0}
+
+\begin{DoxyCompactList}\small\item\em \-Number of elements in an array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a4c1272a2cfbdc6084d2de12c5da3a5cc}{mw\-Size \hyperlink{class_mx_array_a4c1272a2cfbdc6084d2de12c5da3a5cc}{ndims} () const }\label{class_mx_array_a4c1272a2cfbdc6084d2de12c5da3a5cc}
+
+\begin{DoxyCompactList}\small\item\em \-Number of dimensions. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aff4e9a0a157a07a2ab1928d615574b3d}{const mw\-Size $\ast$ \hyperlink{class_mx_array_aff4e9a0a157a07a2ab1928d615574b3d}{dims} () const }\label{class_mx_array_aff4e9a0a157a07a2ab1928d615574b3d}
+
+\begin{DoxyCompactList}\small\item\em \-Array of each dimension. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a2803abb662ecdf6b8178700cf1a7479e}{mw\-Size \hyperlink{class_mx_array_a2803abb662ecdf6b8178700cf1a7479e}{rows} () const }\label{class_mx_array_a2803abb662ecdf6b8178700cf1a7479e}
+
+\begin{DoxyCompactList}\small\item\em \-Number of rows in an array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a9b48e7ec34f7997d7c8f1d4406acb6cc}{mw\-Size \hyperlink{class_mx_array_a9b48e7ec34f7997d7c8f1d4406acb6cc}{cols} () const }\label{class_mx_array_a9b48e7ec34f7997d7c8f1d4406acb6cc}
+
+\begin{DoxyCompactList}\small\item\em \-Number of columns in an array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aaafc4e535b9825a5690f056024cba34a}{int \hyperlink{class_mx_array_aaafc4e535b9825a5690f056024cba34a}{nfields} () const }\label{class_mx_array_aaafc4e535b9825a5690f056024cba34a}
+
+\begin{DoxyCompactList}\small\item\em \-Number of fields in a struct array. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_mx_array_ab466ed2945e28f9b13827902132fdc7c}{fieldname} (int index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Get field name of a struct array. \end{DoxyCompactList}\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_mx_array_ada6d973cd204127af0b0064dff663852}{fieldnames} () const 
+\begin{DoxyCompactList}\small\item\em \-Get field names of a struct array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a3b344031fdd065ed3dcbf18fea14d4c0}{mw\-Size \hyperlink{class_mx_array_a3b344031fdd065ed3dcbf18fea14d4c0}{nzmax} () const }\label{class_mx_array_a3b344031fdd065ed3dcbf18fea14d4c0}
+
+\begin{DoxyCompactList}\small\item\em \-Number of elements in \-I\-R, \-P\-R, and \-P\-I arrays. \end{DoxyCompactList}\item 
+mw\-Index \hyperlink{class_mx_array_aa109aabce4e800e91bb9510c918dba43}{subs} (mw\-Index i, mw\-Index j=0) const 
+\begin{DoxyCompactList}\small\item\em \-Offset from first element to desired element. \end{DoxyCompactList}\item 
+mw\-Index \hyperlink{class_mx_array_af1a8c8f57fbcc9ed804feb2cceb73709}{subs} (const std\-::vector$<$ mw\-Index $>$ \&si) const 
+\begin{DoxyCompactList}\small\item\em \-Offset from first element to desired element. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a81a6065a40c88135267358b7692af539}{bool \hyperlink{class_mx_array_a81a6065a40c88135267358b7692af539}{is\-Cell} () const }\label{class_mx_array_a81a6065a40c88135267358b7692af539}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is cell array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ad2bc80522c0c1ba6bb149876854d55cc}{bool \hyperlink{class_mx_array_ad2bc80522c0c1ba6bb149876854d55cc}{is\-Char} () const }\label{class_mx_array_ad2bc80522c0c1ba6bb149876854d55cc}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is string array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ae9be625e4356beaa22f467ce4c578611}{bool \hyperlink{class_mx_array_ae9be625e4356beaa22f467ce4c578611}{is\-Class} (std\-::string s) const }\label{class_mx_array_ae9be625e4356beaa22f467ce4c578611}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array is member of specified class. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a0f570785df894e3481dd3e466af7fafe}{bool \hyperlink{class_mx_array_a0f570785df894e3481dd3e466af7fafe}{is\-Complex} () const }\label{class_mx_array_a0f570785df894e3481dd3e466af7fafe}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether data is complex. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a116f603a7a7d50ab8bf3be571b07469c}{bool \hyperlink{class_mx_array_a116f603a7a7d50ab8bf3be571b07469c}{is\-Double} () const }\label{class_mx_array_a116f603a7a7d50ab8bf3be571b07469c}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether mx\-Array represents data as double-\/precision, floating-\/point numbers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a3757ff128300eabba4abec14c942cbab}{bool \hyperlink{class_mx_array_a3757ff128300eabba4abec14c942cbab}{is\-Empty} () const }\label{class_mx_array_a3757ff128300eabba4abec14c942cbab}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array is empty. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aa9e308686650119d3a61e564abd619f9}{bool \hyperlink{class_mx_array_aa9e308686650119d3a61e564abd619f9}{is\-From\-Global\-W\-S} () const }\label{class_mx_array_aa9e308686650119d3a61e564abd619f9}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array was copied from \-M\-A\-T\-L\-A\-B global workspace. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a304b958ecd9b767425dc6f8b9e42c674}{bool \hyperlink{class_mx_array_a304b958ecd9b767425dc6f8b9e42c674}{is\-Int8} () const }\label{class_mx_array_a304b958ecd9b767425dc6f8b9e42c674}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as signed 8-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a849b4d39b68aa6bf84bf715cbac1cb84}{bool \hyperlink{class_mx_array_a849b4d39b68aa6bf84bf715cbac1cb84}{is\-Int16} () const }\label{class_mx_array_a849b4d39b68aa6bf84bf715cbac1cb84}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as signed 16-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aeabe8b6c01a45d2ea49fb4d14e29d9f0}{bool \hyperlink{class_mx_array_aeabe8b6c01a45d2ea49fb4d14e29d9f0}{is\-Int32} () const }\label{class_mx_array_aeabe8b6c01a45d2ea49fb4d14e29d9f0}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as signed 32-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a1c720da4fe0328e4d5582ce61d2de50e}{bool \hyperlink{class_mx_array_a1c720da4fe0328e4d5582ce61d2de50e}{is\-Int64} () const }\label{class_mx_array_a1c720da4fe0328e4d5582ce61d2de50e}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as signed 64-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ae8f8917f83ee5af509ea2032b05b0c89}{bool \hyperlink{class_mx_array_ae8f8917f83ee5af509ea2032b05b0c89}{is\-Logical} () const }\label{class_mx_array_ae8f8917f83ee5af509ea2032b05b0c89}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array is of type mx\-Logical. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a0a32db21adc2c5c92518183a75932a80}{bool \hyperlink{class_mx_array_a0a32db21adc2c5c92518183a75932a80}{is\-Logical\-Scalar} () const }\label{class_mx_array_a0a32db21adc2c5c92518183a75932a80}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether scalar array is of type mx\-Logical. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aa30ae1c09e11422eea2074966de21411}{bool \hyperlink{class_mx_array_aa30ae1c09e11422eea2074966de21411}{is\-Logical\-Scalar\-True} () const }\label{class_mx_array_aa30ae1c09e11422eea2074966de21411}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether scalar array of type mx\-Logical is true. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a7173969e8eb1169af140f12eb764b7f6}{bool \hyperlink{class_mx_array_a7173969e8eb1169af140f12eb764b7f6}{is\-Numeric} () const }\label{class_mx_array_a7173969e8eb1169af140f12eb764b7f6}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array is numeric. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_af6e7c2d0573ed3bc16aa25636de42b7f}{bool \hyperlink{class_mx_array_af6e7c2d0573ed3bc16aa25636de42b7f}{is\-Single} () const }\label{class_mx_array_af6e7c2d0573ed3bc16aa25636de42b7f}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as single-\/precision, floating-\/point numbers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a01a1a25a8fbc13d6864d9162966583f7}{bool \hyperlink{class_mx_array_a01a1a25a8fbc13d6864d9162966583f7}{is\-Sparse} () const }\label{class_mx_array_a01a1a25a8fbc13d6864d9162966583f7}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is sparse array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ae97b9a35a8a3b1ac14997de351636182}{bool \hyperlink{class_mx_array_ae97b9a35a8a3b1ac14997de351636182}{is\-Struct} () const }\label{class_mx_array_ae97b9a35a8a3b1ac14997de351636182}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is structure array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_afcaef8b9519b3aa5964b2c8f6fc6c039}{bool \hyperlink{class_mx_array_afcaef8b9519b3aa5964b2c8f6fc6c039}{is\-Uint8} () const }\label{class_mx_array_afcaef8b9519b3aa5964b2c8f6fc6c039}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as unsigned 8-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aaa21ca835e77c807ac552f5fb600f664}{bool \hyperlink{class_mx_array_aaa21ca835e77c807ac552f5fb600f664}{is\-Uint16} () const }\label{class_mx_array_aaa21ca835e77c807ac552f5fb600f664}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as unsigned 16-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a27de2dec8d022c7baef9a4888a70cc24}{bool \hyperlink{class_mx_array_a27de2dec8d022c7baef9a4888a70cc24}{is\-Uint32} () const }\label{class_mx_array_a27de2dec8d022c7baef9a4888a70cc24}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as unsigned 32-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ac99d3489575db04007101eaad39ccf2c}{bool \hyperlink{class_mx_array_ac99d3489575db04007101eaad39ccf2c}{is\-Uint64} () const }\label{class_mx_array_ac99d3489575db04007101eaad39ccf2c}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether array represents data as unsigned 64-\/bit integers. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a2eb86ac49d720ff4fdb4171c2a9a8561}{bool \hyperlink{class_mx_array_a2eb86ac49d720ff4fdb4171c2a9a8561}{is\-Field} (const std\-::string \&field\-Name, mw\-Index index=0) const }\label{class_mx_array_a2eb86ac49d720ff4fdb4171c2a9a8561}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether a struct array has a specified field. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\-T \hyperlink{class_mx_array_a7c5608847d4feeae2ecdeafb8497935e}{at} (mw\-Index index) const 
+\begin{DoxyCompactList}\small\item\em \-Template for element accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\-T \hyperlink{class_mx_array_a5bdc668cca9f2d1ac892ebe7b70ba7bf}{at} (mw\-Index i, mw\-Index j) const 
+\begin{DoxyCompactList}\small\item\em \-Template for element accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\-T \hyperlink{class_mx_array_a4a08ca330eddd1d7529fa7e52787c13b}{at} (const std\-::vector$<$ mw\-Index $>$ \&si) const 
+\begin{DoxyCompactList}\small\item\em \-Template for element accessor. \end{DoxyCompactList}\item 
+\hyperlink{class_mx_array}{\-Mx\-Array} \hyperlink{class_mx_array_ab0bd69bb02dceceb08e9aa0d370f67e3}{at} (const std\-::string \&field\-Name, mw\-Index index=0) const 
+\begin{DoxyCompactList}\small\item\em \-Struct element accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mx_array_ac074890c7e291d058a42d277484b474d}{set} (mw\-Index index, const \-T \&value)
+\begin{DoxyCompactList}\small\item\em \-Template for element write accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mx_array_a273d34df890744e5bd647b683b115156}{set} (mw\-Index i, mw\-Index j, const \-T \&value)
+\begin{DoxyCompactList}\small\item\em \-Template for element write accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mx_array_a18aa88f7014b47c3d6b0be8dce9bbd31}{set} (const std\-::vector$<$ mw\-Index $>$ \&si, const \-T \&value)
+\begin{DoxyCompactList}\small\item\em \-Template for element write accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mx_array_ae990e80399f290cf9df59580ad60a491}{set} (const std\-::string \&field\-Name, const \-T \&value, mw\-Index index=0)
+\begin{DoxyCompactList}\small\item\em \-Template for struct element write accessor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$$>$ }\\void \hyperlink{class_mx_array_acbc4d5b066f9fc7d22361d333bd7b945}{set} (mw\-Index index, const \hyperlink{class_mx_array}{\-Mx\-Array} \&value)
+\begin{DoxyCompactList}\small\item\em \-Template for element write accessor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mx_array}{\-Mx\-Array} \hyperlink{class_mx_array_a293fb2fbf875cf62362df68e8e9cbbb0}{\-Cell} (int m=1, int n=1)
+\begin{DoxyCompactList}\small\item\em \-Create a new cell array. \end{DoxyCompactList}\item 
+static \hyperlink{class_mx_array}{\-Mx\-Array} \hyperlink{class_mx_array_af06a4fb3d50808a1fc2dee9772be4642}{\-Struct} (const char $\ast$$\ast$fields=\-N\-U\-L\-L, int \hyperlink{class_mx_array_aaafc4e535b9825a5690f056024cba34a}{nfields}=0, int m=1, int n=1)
+\begin{DoxyCompactList}\small\item\em \-Create a new struct array. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a229a284977cf6e7541dbc259aa480e00}{static bool \hyperlink{class_mx_array_a229a284977cf6e7541dbc259aa480e00}{is\-Finite} (double d)}\label{class_mx_array_a229a284977cf6e7541dbc259aa480e00}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is finite. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_aea55ca36623b9c5d132cf734af4131a1}{static bool \hyperlink{class_mx_array_aea55ca36623b9c5d132cf734af4131a1}{is\-Inf} (double d)}\label{class_mx_array_aea55ca36623b9c5d132cf734af4131a1}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is infinite. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a4b52d1c8b45647c03187ea1c6cc7ace1}{static bool \hyperlink{class_mx_array_a4b52d1c8b45647c03187ea1c6cc7ace1}{is\-Na\-N} (double d)}\label{class_mx_array_a4b52d1c8b45647c03187ea1c6cc7ace1}
+
+\begin{DoxyCompactList}\small\item\em \-Determine whether input is \-Na\-N (\-Not-\/a-\/\-Number). \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_ac701c2d76f91958eb22b041f3be21d34}{static double \hyperlink{class_mx_array_ac701c2d76f91958eb22b041f3be21d34}{\-Inf} ()}\label{class_mx_array_ac701c2d76f91958eb22b041f3be21d34}
+
+\begin{DoxyCompactList}\small\item\em \-Value of infinity. \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a82fd64eb09be37b6669fad2bfb9c3340}{static double \hyperlink{class_mx_array_a82fd64eb09be37b6669fad2bfb9c3340}{\-Na\-N} ()}\label{class_mx_array_a82fd64eb09be37b6669fad2bfb9c3340}
+
+\begin{DoxyCompactList}\small\item\em \-Value of \-Na\-N (\-Not-\/a-\/\-Number). \end{DoxyCompactList}\item 
+\hypertarget{class_mx_array_a7b11a00959b9bcb1279be9be85278cbb}{static double \hyperlink{class_mx_array_a7b11a00959b9bcb1279be9be85278cbb}{\-Eps} ()}\label{class_mx_array_a7b11a00959b9bcb1279be9be85278cbb}
+
+\begin{DoxyCompactList}\small\item\em \-Value of \-E\-P\-S. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mx\-Array object wrapper for data conversion and manipulation. 
+
+\-Definition at line 18 of file \-Mx\-Array.\-hpp.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_mx_array_aae465ee9ac1f8b00442b407a9cc56e3a}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const mx\-Array $\ast$}]{arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_aae465ee9ac1f8b00442b407a9cc56e3a}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from mx\-Array$\ast$. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em arr} & mx\-Array pointer given by mex\-Function. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 24 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a6f8cdf666ef945f2e26fe64fac9f2aed}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Mx\-Array} \&}]{arr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_a6f8cdf666ef945f2e26fe64fac9f2aed}
+
+
+\-Copy constructor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em arr} & \-Another \hyperlink{class_mx_array}{\-Mx\-Array}. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 28 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a0ec931f3bd676bf735fb0c233d6ed451}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a0ec931f3bd676bf735fb0c233d6ed451}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from int. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em i} & int value. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 94 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a1b3623615402c6e949b03d30e35dea73}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const double}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a1b3623615402c6e949b03d30e35dea73}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from double. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & double value. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 101 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a5617fd8f0d2b6b1cea2ede44ab306b98}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a5617fd8f0d2b6b1cea2ede44ab306b98}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from bool. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em b} & bool value. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 107 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a805f2eb5b095527b50831388e5ba1dc6}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a805f2eb5b095527b50831388e5ba1dc6}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from std\-::string. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em s} & reference to a string value. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 113 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_ab4306c5e0791fd624b6038fd8fac3e58}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{mat, }
+\item[{mx\-Class\-I\-D}]{classid = {\ttfamily mx\-U\-N\-K\-N\-O\-W\-N\-\_\-\-C\-L\-A\-S\-S}, }
+\item[{bool}]{transpose = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_ab4306c5e0791fd624b6038fd8fac3e58}
+
+
+\-Convert cv\-::\-Mat to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em mat} & cv\-::\-Mat object. \\
+\hline
+{\em classid} & classid of mx\-Array. e.\-g., mx\-D\-O\-U\-B\-L\-E\-\_\-\-C\-L\-A\-S\-S. \-When mx\-U\-N\-K\-N\-O\-W\-N\-\_\-\-C\-L\-A\-S\-S is specified, classid will be automatically determined from the type of cv\-::\-Mat. default\-: mx\-U\-N\-K\-N\-O\-W\-N\-\_\-\-C\-L\-A\-S\-S. \\
+\hline
+{\em transpose} & \-Optional transposition to the return value so that rows and columns of the 2\-D \-Mat are mapped to the 2nd and 1st dimensions in \hyperlink{class_mx_array}{\-Mx\-Array}, respectively. \-This does not apply the \-N-\/\-D array conversion. default true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object.
+\end{DoxyReturn}
+\-Convert cv\-::\-Mat object to an \hyperlink{class_mx_array}{\-Mx\-Array}. \-When the cv\-::\-Mat object is 2\-D, the width, height, and channels are mapped to the first, second, and third dimensions of the \hyperlink{class_mx_array}{\-Mx\-Array} unless transpose flag is set to false. \-When the cv\-::\-Mat object is \-N-\/\-D, (dim 1, dim 2,...dim \-N, channels) are mapped to (dim 2, dim 1, ..., dim \-N, dim \-N+1), respectively.
+
+\-Example\-: 
+\begin{DoxyCode}
+ cv::Mat x(120, 90, CV_8UC3, Scalar(0));
+ mxArray* plhs[0] = MxArray(x);
+\end{DoxyCode}
+ 
+
+\-Definition at line 119 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a4f4dcca25beb643cf8e78a477513a522}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Sparse\-Mat \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a4f4dcca25beb643cf8e78a477513a522}
+
+
+\-Convert float cv\-::\-Sparse\-Mat to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em mat} & cv\-::\-Sparse\-Mat object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 165 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a53bb6d88f1eb9639299ded9f0e371a64}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Moments \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a53bb6d88f1eb9639299ded9f0e371a64}
+
+
+\-Convert cv\-::\-Moments to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em m} & cv\-::\-Moments object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 201 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_aa0d408bf4f1bfaec86b916cfd9f94d41}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Key\-Point \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_aa0d408bf4f1bfaec86b916cfd9f94d41}
+
+
+\-Convert cv\-::\-Key\-Point to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em p} & cv\-::\-Key\-Point object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 218 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a91cfe53794d6b259c5361e0ed92918db}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a91cfe53794d6b259c5361e0ed92918db}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-Key\-Point$>$. 
+
+\-Make a cell array. 
+\begin{DoxyParams}{\-Parameters}
+{\em v} & vector of \-Key\-Point. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 231 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a86c84d476db4160af1f95c575d0dc79a}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-D\-Match \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a86c84d476db4160af1f95c575d0dc79a}
+
+
+\-Convert cv\-::\-D\-Match to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em m} & cv\-::\-D\-Match object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 247 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a7af56911425a206c9f1055b09aa48e3e}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ cv\-::\-D\-Match $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a7af56911425a206c9f1055b09aa48e3e}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-T$>$. 
+
+\-Make a cell array. 
+\begin{DoxyParams}{\-Parameters}
+{\em v} & vector of type \-T. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 258 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a1d2ee90b6e776e5e866e0ddf8295c9b7}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Rotated\-Rect \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a1d2ee90b6e776e5e866e0ddf8295c9b7}
+
+
+\-Convert cv\-::\-Rotated\-Rect to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em m} & cv\-::\-Rotated\-Rect object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 272 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_aada2490f2a1f10ac71ba8b1cba5ea4cf}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Term\-Criteria \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_aada2490f2a1f10ac71ba8b1cba5ea4cf}
+
+
+\-Convert cv\-::\-Term\-Criteria to \hyperlink{class_mx_array}{\-Mx\-Array}. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em t} & cv\-::\-Term\-Criteria object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 282 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a614bce9d9f9ebf0e9dbb49847e4e82ed}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ \-T $>$ \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a614bce9d9f9ebf0e9dbb49847e4e82ed}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from vector$<$\-T$>$. 
+
+\-Make a cell array. 
+\begin{DoxyParams}{\-Parameters}
+{\em v} & vector of type \-T. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 611 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a8407fc80904b6a6fec3d157879cbc87b}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Point\-\_\-$<$ \-T $>$ \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a8407fc80904b6a6fec3d157879cbc87b}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Point\-\_\-$<$\-T$>$. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em p} & cv\-::\-Point\-\_\-$<$\-T$>$ object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+two-\/element numeric \hyperlink{class_mx_array}{\-Mx\-Array}. 
+\end{DoxyReturn}
+
+
+\-Definition at line 620 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ab3a3a3b1f58fade86c5ae8ca2ec81dc7}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Point3\-\_\-$<$ \-T $>$ \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_ab3a3a3b1f58fade86c5ae8ca2ec81dc7}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Point3\-\_\-$<$\-T$>$. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em p} & cv\-::\-Point3\-\_\-$<$\-T$>$ object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+three-\/element numeric \hyperlink{class_mx_array}{\-Mx\-Array}. 
+\end{DoxyReturn}
+
+
+\-Definition at line 631 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a2347496d77055a6d52f190b89ffed563}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Size\-\_\-$<$ \-T $>$ \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_a2347496d77055a6d52f190b89ffed563}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Size\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+two-\/element numeric \hyperlink{class_mx_array}{\-Mx\-Array}. 
+\end{DoxyReturn}
+
+
+\-Definition at line 643 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_af9af80ce387fd81ab7ae588121e06e45}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Rect\-\_\-$<$ \-T $>$ \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_af9af80ce387fd81ab7ae588121e06e45}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Rect\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+four-\/element numeric \hyperlink{class_mx_array}{\-Mx\-Array} \mbox{[}x, y, width, height\mbox{]}. 
+\end{DoxyReturn}
+
+
+\-Definition at line 654 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ab9fc8869dbb26521f6ddb7c7ac46659e}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Scalar\-\_\-$<$ \-T $>$ \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_mx_array_ab9fc8869dbb26521f6ddb7c7ac46659e}
+
+
+\hyperlink{class_mx_array}{\-Mx\-Array} constructor from cv\-::\-Scalar\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+four-\/element numeric \hyperlink{class_mx_array}{\-Mx\-Array}. 
+\end{DoxyReturn}
+
+
+\-Definition at line 667 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a3d79d00a7db91086a7770021ef25ecf2}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Mx\-Array@{\-Mx\-Array}}
+\index{\-Mx\-Array@{\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array\-::\-Mx\-Array} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$$\ast$}]{fields, }
+\item[{int}]{nfields, }
+\item[{int}]{m = {\ttfamily 1}, }
+\item[{int}]{n = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_a3d79d00a7db91086a7770021ef25ecf2}
+
+
+\-Generic constructor for a struct array. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em fields} & field names. \\
+\hline
+{\em nfields} & number of field names. \\
+\hline
+{\em m} & size of the first dimension. \\
+\hline
+{\em n} & size of the second dimension.\\
+\hline
+\end{DoxyParams}
+\-Example\-: 
+\begin{DoxyCode}
+ const char* fields[] = {"field1", "field2"};
+ MxArray m(fields, 2);
+ m.set("field1", 1);
+ m.set("field2", "field2 value");
+\end{DoxyCode}
+ 
+
+\-Definition at line 292 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a4345e9b5971748ec4a7419dab42de4ef}{\index{\-Mx\-Array@{\-Mx\-Array}!$\sim$\-Mx\-Array@{$\sim$\-Mx\-Array}}
+\index{$\sim$\-Mx\-Array@{$\sim$\-Mx\-Array}!MxArray@{\-Mx\-Array}}
+\subsubsection[{$\sim$\-Mx\-Array}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Mx\-Array\-::$\sim$\-Mx\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_mx_array_a4345e9b5971748ec4a7419dab42de4ef}
+
+
+\-Destructor. 
+
+\-This does not free the underlying mx\-Array$\ast$. 
+
+\-Definition at line 156 of file \-Mx\-Array.\-hpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_mx_array_a7c5608847d4feeae2ecdeafb8497935e}{\index{\-Mx\-Array@{\-Mx\-Array}!at@{at}}
+\index{at@{at}!MxArray@{\-Mx\-Array}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array} {\bf \-Mx\-Array\-::at} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a7c5608847d4feeae2ecdeafb8497935e}
+
+
+\-Template for element accessor. 
+
+\-Cell element accessor.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the array element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+value of the element at index.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray m(prhs[0]);
+ double d = m.at<double>(0);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the cell array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} of the element at index.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ MxArray m = cellArray.at<MxArray>(0);
+\end{DoxyCode}
+ 
+
+\-Definition at line 757 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a5bdc668cca9f2d1ac892ebe7b70ba7bf}{\index{\-Mx\-Array@{\-Mx\-Array}!at@{at}}
+\index{at@{at}!MxArray@{\-Mx\-Array}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \-T {\bf \-Mx\-Array\-::at} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{i, }
+\item[{mw\-Index}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a5bdc668cca9f2d1ac892ebe7b70ba7bf}
+
+
+\-Template for element accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em i} & index of the first dimension. \\
+\hline
+{\em j} & index of the second dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+value of the element at (i,j). 
+\end{DoxyReturn}
+
+
+\-Definition at line 806 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a4a08ca330eddd1d7529fa7e52787c13b}{\index{\-Mx\-Array@{\-Mx\-Array}!at@{at}}
+\index{at@{at}!MxArray@{\-Mx\-Array}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \-T {\bf \-Mx\-Array\-::at} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ mw\-Index $>$ \&}]{si}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a4a08ca330eddd1d7529fa7e52787c13b}
+
+
+\-Template for element accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em si} & subscript index of the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+value of the element at subscript index. 
+\end{DoxyReturn}
+
+
+\-Definition at line 812 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ab0bd69bb02dceceb08e9aa0d370f67e3}{\index{\-Mx\-Array@{\-Mx\-Array}!at@{at}}
+\index{at@{at}!MxArray@{\-Mx\-Array}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array} {\bf \-Mx\-Array\-::at} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{field\-Name, }
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_ab0bd69bb02dceceb08e9aa0d370f67e3}
+
+
+\-Struct element accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em field\-Name} & field name of the struct array. \\
+\hline
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+value of the element at the specified field. 
+\end{DoxyReturn}
+
+
+\-Definition at line 487 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a293fb2fbf875cf62362df68e8e9cbbb0}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Cell@{\-Cell}}
+\index{\-Cell@{\-Cell}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf \-Mx\-Array} {\bf \-Mx\-Array\-::\-Cell} (
+\begin{DoxyParamCaption}
+\item[{int}]{m = {\ttfamily 1}, }
+\item[{int}]{n = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}\label{class_mx_array_a293fb2fbf875cf62362df68e8e9cbbb0}
+
+
+\-Create a new cell array. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em m} & \-Number of rows. \\
+\hline
+{\em n} & \-Number of cols. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 161 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a86dda6d0020a5a21c4b7e5f80205a344}{\index{\-Mx\-Array@{\-Mx\-Array}!clone@{clone}}
+\index{clone@{clone}!MxArray@{\-Mx\-Array}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Mx\-Array} {\bf \-Mx\-Array\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_a86dda6d0020a5a21c4b7e5f80205a344}
+
+
+\-Clone mx\-Array. 
+
+\-This allocates new mx\-Array$\ast$. \begin{DoxyReturn}{\-Returns}
+\hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 181 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_aeab469ebea779b8e3cf7e07e4459b925}{\index{\-Mx\-Array@{\-Mx\-Array}!destroy@{destroy}}
+\index{destroy@{destroy}!MxArray@{\-Mx\-Array}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Mx\-Array\-::destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_aeab469ebea779b8e3cf7e07e4459b925}
+
+
+\-Destroy allocated mx\-Array. 
+
+\-Use this to destroy a temporary mx\-Array not to be used in matlab. \begin{DoxyReturn}{\-Returns}
+newly allocated \hyperlink{class_mx_array}{\-Mx\-Array} object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 186 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ab466ed2945e28f9b13827902132fdc7c}{\index{\-Mx\-Array@{\-Mx\-Array}!fieldname@{fieldname}}
+\index{fieldname@{fieldname}!MxArray@{\-Mx\-Array}}
+\subsubsection[{fieldname}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Mx\-Array\-::fieldname} (
+\begin{DoxyParamCaption}
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_ab466ed2945e28f9b13827902132fdc7c}
+
+
+\-Get field name of a struct array. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+\-Definition at line 453 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_ada6d973cd204127af0b0064dff663852}{\index{\-Mx\-Array@{\-Mx\-Array}!fieldnames@{fieldnames}}
+\index{fieldnames@{fieldnames}!MxArray@{\-Mx\-Array}}
+\subsubsection[{fieldnames}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::string $>$ {\bf \-Mx\-Array\-::fieldnames} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_ada6d973cd204127af0b0064dff663852}
+
+
+\-Get field names of a struct array. 
+
+\begin{DoxyReturn}{\-Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+\-Definition at line 462 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a4b2de94745c1f0ae157e554b1bdbe1af}{\index{\-Mx\-Array@{\-Mx\-Array}!operator const mx\-Array $\ast$@{operator const mx\-Array $\ast$}}
+\index{operator const mx\-Array $\ast$@{operator const mx\-Array $\ast$}!MxArray@{\-Mx\-Array}}
+\subsubsection[{operator const mx\-Array $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}\-Mx\-Array\-::operator const mx\-Array $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_a4b2de94745c1f0ae157e554b1bdbe1af}
+
+
+\-Implicit conversion to const mx\-Array$\ast$. 
+
+\begin{DoxyReturn}{\-Returns}
+const mx\-Array$\ast$ pointer. 
+\end{DoxyReturn}
+
+
+\-Definition at line 190 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_aed90283d5d07e0e4973cc9ac8b431d32}{\index{\-Mx\-Array@{\-Mx\-Array}!operator mx\-Array $\ast$@{operator mx\-Array $\ast$}}
+\index{operator mx\-Array $\ast$@{operator mx\-Array $\ast$}!MxArray@{\-Mx\-Array}}
+\subsubsection[{operator mx\-Array $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}\-Mx\-Array\-::operator mx\-Array $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_mx_array_aed90283d5d07e0e4973cc9ac8b431d32}
+
+
+\-Implicit conversion to mx\-Array$\ast$. 
+
+\-Be careful that this internally cast away mx\-Array$\ast$ constness. \begin{DoxyReturn}{\-Returns}
+mx\-Array$\ast$ pointer. 
+\end{DoxyReturn}
+
+
+\-Definition at line 195 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ac074890c7e291d058a42d277484b474d}{\index{\-Mx\-Array@{\-Mx\-Array}!set@{set}}
+\index{set@{set}!MxArray@{\-Mx\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf \-Mx\-Array\-::set} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index, }
+\item[{const \-T \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_ac074890c7e291d058a42d277484b474d}
+
+
+\-Template for element write accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & offset of the array element. \\
+\hline
+{\em value} & value of the field. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 818 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a273d34df890744e5bd647b683b115156}{\index{\-Mx\-Array@{\-Mx\-Array}!set@{set}}
+\index{set@{set}!MxArray@{\-Mx\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf \-Mx\-Array\-::set} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{i, }
+\item[{mw\-Index}]{j, }
+\item[{const \-T \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_a273d34df890744e5bd647b683b115156}
+
+
+\-Template for element write accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em i} & index of the first dimension of the array element. \\
+\hline
+{\em j} & index of the first dimension of the array element. \\
+\hline
+{\em value} & value of the field. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 867 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a18aa88f7014b47c3d6b0be8dce9bbd31}{\index{\-Mx\-Array@{\-Mx\-Array}!set@{set}}
+\index{set@{set}!MxArray@{\-Mx\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf \-Mx\-Array\-::set} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ mw\-Index $>$ \&}]{si, }
+\item[{const \-T \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_a18aa88f7014b47c3d6b0be8dce9bbd31}
+
+
+\-Template for element write accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em si} & subscript index of the element. \\
+\hline
+{\em value} & value of the field. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 873 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_ae990e80399f290cf9df59580ad60a491}{\index{\-Mx\-Array@{\-Mx\-Array}!set@{set}}
+\index{set@{set}!MxArray@{\-Mx\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf \-Mx\-Array\-::set} (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{field\-Name, }
+\item[{const \-T \&}]{value, }
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_ae990e80399f290cf9df59580ad60a491}
+
+
+\-Template for struct element write accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em field\-Name} & field name of the struct array. \\
+\hline
+{\em value} & value of the field. \\
+\hline
+{\em index} & linear index of the struct array element. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 879 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_acbc4d5b066f9fc7d22361d333bd7b945}{\index{\-Mx\-Array@{\-Mx\-Array}!set@{set}}
+\index{set@{set}!MxArray@{\-Mx\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Mx\-Array\-::set} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index, }
+\item[{const {\bf \-Mx\-Array} \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_mx_array_acbc4d5b066f9fc7d22361d333bd7b945}
+
+
+\-Template for element write accessor. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & offset of the array element. \\
+\hline
+{\em value} & value of the field. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 510 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_af06a4fb3d50808a1fc2dee9772be4642}{\index{\-Mx\-Array@{\-Mx\-Array}!\-Struct@{\-Struct}}
+\index{\-Struct@{\-Struct}!MxArray@{\-Mx\-Array}}
+\subsubsection[{\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf \-Mx\-Array} {\bf \-Mx\-Array\-::\-Struct} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$$\ast$}]{fields = {\ttfamily \-N\-U\-L\-L}, }
+\item[{int}]{nfields = {\ttfamily 0}, }
+\item[{int}]{m = {\ttfamily 1}, }
+\item[{int}]{n = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}\label{class_mx_array_af06a4fb3d50808a1fc2dee9772be4642}
+
+
+\-Create a new struct array. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em fields} & \-Field names. \\
+\hline
+{\em nfields} & \-Number of fields. \\
+\hline
+{\em m} & \-Number of rows. \\
+\hline
+{\em n} & \-Number of cols. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 171 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_aa109aabce4e800e91bb9510c918dba43}{\index{\-Mx\-Array@{\-Mx\-Array}!subs@{subs}}
+\index{subs@{subs}!MxArray@{\-Mx\-Array}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}mw\-Index {\bf \-Mx\-Array\-::subs} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{i, }
+\item[{mw\-Index}]{j = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_aa109aabce4e800e91bb9510c918dba43}
+
+
+\-Offset from first element to desired element. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em i} & index of the first dimension of the array. \\
+\hline
+{\em j} & index of the second dimension of the array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+linear offset of the specified subscript index. 
+\end{DoxyReturn}
+
+
+\-Definition at line 474 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_af1a8c8f57fbcc9ed804feb2cceb73709}{\index{\-Mx\-Array@{\-Mx\-Array}!subs@{subs}}
+\index{subs@{subs}!MxArray@{\-Mx\-Array}}
+\subsubsection[{subs}]{\setlength{\rightskip}{0pt plus 5cm}mw\-Index {\bf \-Mx\-Array\-::subs} (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ mw\-Index $>$ \&}]{si}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_af1a8c8f57fbcc9ed804feb2cceb73709}
+
+
+\-Offset from first element to desired element. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em si} & subscript index of the array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+linear offset of the specified subscript index. 
+\end{DoxyReturn}
+
+
+\-Definition at line 482 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_abb072870a2ae6145f4407f67c5160625}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Bool@{to\-Bool}}
+\index{to\-Bool@{to\-Bool}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Mx\-Array\-::to\-Bool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_abb072870a2ae6145f4407f67c5160625}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to bool. 
+
+\begin{DoxyReturn}{\-Returns}
+bool value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 311 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_ab915c6440ba75477bad6529c4ef6b335}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-D\-Match@{to\-D\-Match}}
+\index{to\-D\-Match@{to\-D\-Match}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-D\-Match}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-D\-Match {\bf \-Mx\-Array\-::to\-D\-Match} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_ab915c6440ba75477bad6529c4ef6b335}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-D\-Match. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-D\-Match. 
+\end{DoxyReturn}
+
+
+\-Definition at line 421 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_acadee15dcabd9a224cb0d5380d88e44d}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Double@{to\-Double}}
+\index{to\-Double@{to\-Double}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Mx\-Array\-::to\-Double} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_acadee15dcabd9a224cb0d5380d88e44d}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to double. 
+
+\begin{DoxyReturn}{\-Returns}
+double value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 305 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a438400755505700235e1c71fa9a42354}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Int@{to\-Int}}
+\index{to\-Int@{to\-Int}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Mx\-Array\-::to\-Int} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a438400755505700235e1c71fa9a42354}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to int. 
+
+\begin{DoxyReturn}{\-Returns}
+int value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 299 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a3ba20a9d62919589acb3754a064383a4}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Key\-Point@{to\-Key\-Point}}
+\index{to\-Key\-Point@{to\-Key\-Point}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Key\-Point}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Key\-Point {\bf \-Mx\-Array\-::to\-Key\-Point} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a3ba20a9d62919589acb3754a064383a4}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Key\-Point. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Key\-Point. 
+\end{DoxyReturn}
+
+
+\-Definition at line 409 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a4c5bfc695872e880917a22d16fb8d6da}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Mat@{to\-Mat}}
+\index{to\-Mat@{to\-Mat}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat {\bf \-Mx\-Array\-::to\-Mat} (
+\begin{DoxyParamCaption}
+\item[{int}]{depth = {\ttfamily \-C\-V\-\_\-\-U\-S\-R\-T\-Y\-P\-E1}, }
+\item[{bool}]{transpose = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a4c5bfc695872e880917a22d16fb8d6da}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Mat. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em depth} & depth of cv\-::\-Mat. e.\-g., \-C\-V\-\_\-8\-U, \-C\-V\-\_\-32\-F. \-When \-C\-V\-\_\-\-U\-S\-E\-R\-T\-Y\-P\-E1 is specified, depth will be automatically determined from the classid of the \hyperlink{class_mx_array}{\-Mx\-Array}. default\-: \-C\-V\-\_\-\-U\-S\-E\-R\-T\-Y\-P\-E1. \\
+\hline
+{\em transpose} & \-Optional transposition to the return value so that rows and columns of the 2\-D \-Mat are mapped to the 2nd and 1st dimensions in \hyperlink{class_mx_array}{\-Mx\-Array}, respectively. \-This does not apply the \-N-\/\-D array conversion. default true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Mat object.
+\end{DoxyReturn}
+\-Convert a \hyperlink{class_mx_array}{\-Mx\-Array} object to a cv\-::\-Mat object. \-When the dimensionality of the \hyperlink{class_mx_array}{\-Mx\-Array} is more than 2, the last dimension will be mapped to the channels of the cv\-::\-Mat. \-Also, if the resulting cv\-::\-Mat is 2\-D, the 1st and 2nd dimensions of the \hyperlink{class_mx_array}{\-Mx\-Array} are mapped to rows and columns of the cv\-::\-Mat unless transpose flag is false. \-That is, when \hyperlink{class_mx_array}{\-Mx\-Array} is 3\-D, (dim 1, dim 2, dim 3) are mapped to (cols, rows, channels) of the cv\-::\-Mat by default, whereas if \hyperlink{class_mx_array}{\-Mx\-Array} is more than 4\-D, (dim 1, dim 2, ..., dim \-N-\/1, dim \-N) are mapped to (dim 2, dim 1, ..., dim \-N-\/1, channels) of the cv\-::\-Mat, respectively.
+
+\-Example\-: 
+\begin{DoxyCode}
+ cv::Mat x(MxArray(prhs[0]).toMat());
+\end{DoxyCode}
+ 
+
+\-Definition at line 327 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_accc1e81c0535e2861c8fb9eabc7672cb}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Mat\-N\-D@{to\-Mat\-N\-D}}
+\index{to\-Mat\-N\-D@{to\-Mat\-N\-D}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Mat\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat\-N\-D {\bf \-Mx\-Array\-::to\-Mat\-N\-D} (
+\begin{DoxyParamCaption}
+\item[{int}]{depth = {\ttfamily \-C\-V\-\_\-\-U\-S\-R\-T\-Y\-P\-E1}, }
+\item[{bool}]{transpose = {\ttfamily true}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_accc1e81c0535e2861c8fb9eabc7672cb}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to a single-\/channel cv\-::\-Mat. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em depth} & depth of cv\-::\-Mat. e.\-g., \-C\-V\-\_\-8\-U, \-C\-V\-\_\-32\-F. \-When \-C\-V\-\_\-\-U\-S\-E\-R\-T\-Y\-P\-E1 is specified, depth will be automatically determined from the the classid of the \hyperlink{class_mx_array}{\-Mx\-Array}. default\-: \-C\-V\-\_\-\-U\-S\-E\-R\-T\-Y\-P\-E1. \\
+\hline
+{\em transpose} & \-Optional transposition to the return value so that rows and columns of the 2\-D \-Mat are mapped to the 2nd and 1st dimensions in \hyperlink{class_mx_array}{\-Mx\-Array}, respectively. \-This does not apply the \-N-\/\-D array conversion. default true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+const cv\-::\-Mat object.
+\end{DoxyReturn}
+\-Convert a \hyperlink{class_mx_array}{\-Mx\-Array} object to a single-\/channel cv\-::\-Mat object. \-If the \hyperlink{class_mx_array}{\-Mx\-Array} is 2\-D, the 1st and 2nd dimensions of the \hyperlink{class_mx_array}{\-Mx\-Array} are mapped to rows and columns of the cv\-::\-Mat unless transpose flag is false. \-If the \hyperlink{class_mx_array}{\-Mx\-Array} is more than 3\-D, the 1st and 2nd dimensions of the \hyperlink{class_mx_array}{\-Mx\-Array} are mapped to 2nd and 1st dimensions of the cv\-::\-Mat. \-That is, when \hyperlink{class_mx_array}{\-Mx\-Array} is 2\-D, (dim 1, dim 2) are mapped to (cols, rows) of the cv\-::\-Mat by default, whereas if \hyperlink{class_mx_array}{\-Mx\-Array} is more than 3\-D, (dim 1, dim 2, dim 3, ..., dim \-N) are mapped to (dim 2, dim 1, dim 3, ..., dim \-N) of the cv\-::\-Mat, respectively.
+
+\-Example\-: 
+\begin{DoxyCode}
+ cv::Mat x(MxArray(prhs[0]).toMatND());
+\end{DoxyCode}
+ 
+
+\-Definition at line 354 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a7a29709ed5e6a729cba3866ecaee9ef8}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Moments@{to\-Moments}}
+\index{to\-Moments@{to\-Moments}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Moments}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Moments {\bf \-Mx\-Array\-::to\-Moments} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a7a29709ed5e6a729cba3866ecaee9ef8}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Moments. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Moments. 
+\end{DoxyReturn}
+
+
+\-Definition at line 393 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a0204a491fbf67ad52e940b53ec177deb}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Point3\-\_\-@{to\-Point3\-\_\-}}
+\index{to\-Point3\-\_\-@{to\-Point3\-\_\-}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Point3\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cv\-::\-Point3\-\_\-$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Point3\-\_\-} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a0204a491fbf67ad52e940b53ec177deb}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Point3\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Poin3\-\_\-$<$\-T$>$ value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 688 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a0b0fff290d0fbc366f0a2fb87858d6a3}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Point\-\_\-@{to\-Point\-\_\-}}
+\index{to\-Point\-\_\-@{to\-Point\-\_\-}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Point\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cv\-::\-Point\-\_\-$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Point\-\_\-} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a0b0fff290d0fbc366f0a2fb87858d6a3}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Point\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Point\-\_\-$<$\-T$>$ value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 680 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a0965c929ef9fb993fb489fce56e7df1e}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Range@{to\-Range}}
+\index{to\-Range@{to\-Range}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Range}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Range {\bf \-Mx\-Array\-::to\-Range} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a0965c929ef9fb993fb489fce56e7df1e}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Range. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Range. 
+\end{DoxyReturn}
+
+
+\-Definition at line 431 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a6d5cab098423479d39258ae99f16017e}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Rect\-\_\-@{to\-Rect\-\_\-}}
+\index{to\-Rect\-\_\-@{to\-Rect\-\_\-}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Rect\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cv\-::\-Rect\-\_\-$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Rect\-\_\-} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a6d5cab098423479d39258ae99f16017e}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Rect\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Rect\-\_\-$<$\-T$>$ value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 705 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a1178e6229938695335f2c808b8d01a25}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Scalar\-\_\-@{to\-Scalar\-\_\-}}
+\index{to\-Scalar\-\_\-@{to\-Scalar\-\_\-}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Scalar\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cv\-::\-Scalar\-\_\-$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Scalar\-\_\-} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a1178e6229938695335f2c808b8d01a25}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Scalar\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Scalar\-\_\-$<$\-T$>$ value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 714 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_aed962953548537fd8679dc2f6ad3e45c}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Size\-\_\-@{to\-Size\-\_\-}}
+\index{to\-Size\-\_\-@{to\-Size\-\_\-}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Size\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cv\-::\-Size\-\_\-$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Size\-\_\-} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_aed962953548537fd8679dc2f6ad3e45c}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to \-Size\-\_\-$<$\-T$>$. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Size\-\_\-$<$\-T$>$ value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 696 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_a156c50d54516981571b6d8ecc5c4f67c}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Sparse\-Mat@{to\-Sparse\-Mat}}
+\index{to\-Sparse\-Mat@{to\-Sparse\-Mat}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Sparse\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Sparse\-Mat {\bf \-Mx\-Array\-::to\-Sparse\-Mat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a156c50d54516981571b6d8ecc5c4f67c}
+
+
+\-Convert double sparse \hyperlink{class_mx_array}{\-Mx\-Array} to float cv\-::\-Sparse\-Mat. 
+
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Sparse\-Mat object. 
+\end{DoxyReturn}
+
+
+\-Definition at line 368 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a9681920ceef511509f37a880be0acb7c}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Mx\-Array\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a9681920ceef511509f37a880be0acb7c}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::string. 
+
+\begin{DoxyReturn}{\-Returns}
+std\-::string value. 
+\end{DoxyReturn}
+
+
+\-Definition at line 317 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_a257afd9a6fc3e920b89f6957291709f1}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Term\-Criteria@{to\-Term\-Criteria}}
+\index{to\-Term\-Criteria@{to\-Term\-Criteria}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Term\-Criteria}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Term\-Criteria {\bf \-Mx\-Array\-::to\-Term\-Criteria} (
+\begin{DoxyParamCaption}
+\item[{mw\-Index}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_a257afd9a6fc3e920b89f6957291709f1}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to cv\-::\-Term\-Criteria. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em index} & index of the struct array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+cv\-::\-Term\-Criteria. 
+\end{DoxyReturn}
+
+
+\-Definition at line 443 of file \-Mx\-Array.\-cpp.
+
+\hypertarget{class_mx_array_adaae9b7207e082bbe0d7b1677da0b7d0}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Vector@{to\-Vector}}
+\index{to\-Vector@{to\-Vector}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ cv\-::\-D\-Match $>$ {\bf \-Mx\-Array\-::to\-Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_adaae9b7207e082bbe0d7b1677da0b7d0}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-T$>$ for a primitive type. 
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$cv\-::\-D\-Match$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$cv\-::\-Key\-Point$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-Point3f$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-Point2f$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-Point$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$cv\-::\-Mat$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$std\-::string$>$.
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-Mx\-Array$>$.
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-T$>$ value.
+\end{DoxyReturn}
+\-The method is intended for conversion to a raw numeric vector such as std\-::vector$<$int$>$ or std\-::vector$<$double$>$. \-Example\-:
+
+
+\begin{DoxyCode}
+ MxArray numArray(prhs[0]);
+ vector<double> vd = numArray.toVector<double>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-Mx\-Array$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<MxArray> v = cellArray.toVector<MxArray>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$std\-::string$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<string> v = cellArray.toVector<string>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$cv\-::\-Mat$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<Mat> v = cellArray.toVector<Mat>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-Point$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<Point> v = cellArray.toVector<Point>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-Point2f$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<Point2f> v = cellArray.toVector<Point2f>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-Point3f$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ vector<Point3f> v = cellArray.toVector<Point3f>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$cv\-::\-Key\-Point$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray structArray(prhs[0]);
+ vector<KeyPoint> v = structArray.toVector<KeyPoint>();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$cv\-::\-D\-Match$>$ value.
+\end{DoxyReturn}
+\-Example\-: 
+\begin{DoxyCode}
+ MxArray structArray(prhs[0]);
+ vector<DMatch> v = structArray.toVector<DMatch>();
+\end{DoxyCode}
+ 
+
+\-Definition at line 730 of file \-Mx\-Array.\-hpp.
+
+\hypertarget{class_mx_array_af5179460954b17e074a402aaf6c3ee92}{\index{\-Mx\-Array@{\-Mx\-Array}!to\-Vector@{to\-Vector}}
+\index{to\-Vector@{to\-Vector}!MxArray@{\-Mx\-Array}}
+\subsubsection[{to\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::vector$<$ \-T $>$ {\bf \-Mx\-Array\-::to\-Vector} (
+\begin{DoxyParamCaption}
+\item[{std\-::const\-\_\-mem\-\_\-fun\-\_\-ref\-\_\-t$<$ \-T, {\bf \-Mx\-Array} $>$}]{f}
+\end{DoxyParamCaption}
+) const}}\label{class_mx_array_af5179460954b17e074a402aaf6c3ee92}
+
+
+\-Convert \hyperlink{class_mx_array}{\-Mx\-Array} to std\-::vector$<$\-T$>$ by a specified conversion method. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em f} & member function of \hyperlink{class_mx_array}{\-Mx\-Array} (e.\-g., \&\hyperlink{class_mx_array_a4c5bfc695872e880917a22d16fb8d6da}{\-Mx\-Array\-::to\-Mat}, \&\hyperlink{class_mx_array_a438400755505700235e1c71fa9a42354}{\-Mx\-Array\-::to\-Int}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+std\-::vector$<$\-T$>$ value.
+\end{DoxyReturn}
+\-The method constructs std\-::vector$<$\-T$>$ by applying conversion method f to each cell array element. \-This is similar to std\-::transform function. \-An example usage is shown below\-:
+
+
+\begin{DoxyCode}
+ MxArray cellArray(prhs[0]);
+ const_mem_fun_ref_t<Point3i,MxArray> converter(&MxArray::toPoint3_<int>);
+ vector<Point3i> v = cellArray.toVector(converter);
+\end{DoxyCode}
+ 
+
+\-Definition at line 746 of file \-Mx\-Array.\-hpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_mx_array_8hpp}{\-Mx\-Array.\-hpp}\item 
+src/+cv/\hyperlink{group_rectangles_8cpp}{group\-Rectangles.\-cpp}\item 
+src/\hyperlink{_mx_array_8cpp}{\-Mx\-Array.\-cpp}\end{DoxyCompactItemize}

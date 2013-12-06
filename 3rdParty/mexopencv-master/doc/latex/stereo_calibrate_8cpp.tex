@@ -1,0 +1,92 @@
+\hypertarget{stereo_calibrate_8cpp}{\section{src/+cv/stereo\-Calibrate.cpp \-File \-Reference}
+\label{stereo_calibrate_8cpp}\index{src/+cv/stereo\-Calibrate.\-cpp@{src/+cv/stereo\-Calibrate.\-cpp}}
+}
+
+
+mex interface for stereo\-Calibrate  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{stereo_calibrate_8cpp_ad47fd677ac366259bb855b7f560b2c2c}{mx\-Array $\ast$ \hyperlink{stereo_calibrate_8cpp_ad47fd677ac366259bb855b7f560b2c2c}{value\-Struct} (const \-Mat \&camera\-Matrix1, const \-Mat \&dist\-Coeffs1, const \-Mat \&camera\-Matrix2, const \-Mat \&dist\-Coeffs2, const \-Mat \&\-R, const \-Mat \&\-T, const \-Mat \&\-E, const \-Mat \&\-F, const double \&d)}\label{stereo_calibrate_8cpp_ad47fd677ac366259bb855b7f560b2c2c}
+
+\begin{DoxyCompactList}\small\item\em \-Create a struct. \end{DoxyCompactList}\item 
+\hypertarget{stereo_calibrate_8cpp_ae13346ffe9a52a48e20765700264b39a}{{\footnotesize template$<$typename T $>$ }\\vector$<$ vector$<$ \-Point\-\_\-$<$ \-T $>$ $>$ $>$ \hyperlink{stereo_calibrate_8cpp_ae13346ffe9a52a48e20765700264b39a}{\-Mx\-Array\-To\-Vec\-Vec\-Pt} (\hyperlink{class_mx_array}{\-Mx\-Array} \&arr)}\label{stereo_calibrate_8cpp_ae13346ffe9a52a48e20765700264b39a}
+
+\begin{DoxyCompactList}\small\item\em \-Conversion to vector$<$vector$<$\-Point\-\_\-$<$\-T$>$ $>$ $>$ \end{DoxyCompactList}\item 
+\hypertarget{stereo_calibrate_8cpp_ab4ad1a4282d36a62002cd9144784d690}{{\footnotesize template$<$typename T $>$ }\\vector$<$ vector$<$ \-Point3\-\_\-$<$ \-T $>$ $>$ $>$ \hyperlink{stereo_calibrate_8cpp_ab4ad1a4282d36a62002cd9144784d690}{\-Mx\-Array\-To\-Vec\-Vec\-Pt3} (\hyperlink{class_mx_array}{\-Mx\-Array} \&arr)}\label{stereo_calibrate_8cpp_ab4ad1a4282d36a62002cd9144784d690}
+
+\begin{DoxyCompactList}\small\item\em \-Conversion to vector$<$vector$<$\-Point3\-\_\-$<$\-T$>$ $>$ $>$ \end{DoxyCompactList}\item 
+void \hyperlink{stereo_calibrate_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{stereo_calibrate_8cpp_a8cd15ec30e4121ace6bb812839da0f55}{\-\_\-fieldnames} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em \-Field names for struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for stereo\-Calibrate \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2011 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{stereo_calibrate_8cpp_source}{stereo\-Calibrate.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{stereo_calibrate_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{stereo\-Calibrate.\-cpp@{stereo\-Calibrate.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!stereoCalibrate.cpp@{stereo\-Calibrate.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{stereo_calibrate_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 80 of file stereo\-Calibrate.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{stereo_calibrate_8cpp_a8cd15ec30e4121ace6bb812839da0f55}{\index{stereo\-Calibrate.\-cpp@{stereo\-Calibrate.\-cpp}!\-\_\-fieldnames@{\-\_\-fieldnames}}
+\index{\-\_\-fieldnames@{\-\_\-fieldnames}!stereoCalibrate.cpp@{stereo\-Calibrate.\-cpp}}
+\subsubsection[{\-\_\-fieldnames}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf \-\_\-fieldnames}\mbox{[}$\,$\mbox{]}}}\label{stereo_calibrate_8cpp_a8cd15ec30e4121ace6bb812839da0f55}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ {"cameraMatrix1", "distCoeffs1", "cameraMatrix2",
+    "distCoeffs2", "R", "T", "E", "F", "d"}
+\end{DoxyCode}
+
+
+\-Field names for struct. 
+
+
+
+\-Definition at line 12 of file stereo\-Calibrate.\-cpp.
+

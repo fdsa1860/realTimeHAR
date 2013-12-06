@@ -1,0 +1,84 @@
+\hypertarget{kmeans_8cpp}{\section{src/+cv/kmeans.cpp \-File \-Reference}
+\label{kmeans_8cpp}\index{src/+cv/kmeans.\-cpp@{src/+cv/kmeans.\-cpp}}
+}
+
+
+mex interface for kmeans  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{kmeans_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{kmeans_8cpp_a509bd1f6723e07ed51586eb6d743accc}{\-Initialization}
+\begin{DoxyCompactList}\small\item\em \-K\-Means initalization types for option processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for kmeans \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2011 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{kmeans_8cpp_source}{kmeans.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{kmeans_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{kmeans.\-cpp@{kmeans.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!kmeans.cpp@{kmeans.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{kmeans_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 24 of file kmeans.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{kmeans_8cpp_a509bd1f6723e07ed51586eb6d743accc}{\index{kmeans.\-cpp@{kmeans.\-cpp}!\-Initialization@{\-Initialization}}
+\index{\-Initialization@{\-Initialization}!kmeans.cpp@{kmeans.\-cpp}}
+\subsubsection[{\-Initialization}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Initialization}}}\label{kmeans_8cpp_a509bd1f6723e07ed51586eb6d743accc}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Random",KMEANS_RANDOM_CENTERS)
+    ("PP",KMEANS_PP_CENTERS)
+\end{DoxyCode}
+
+
+\-K\-Means initalization types for option processing. 
+
+
+
+\-Definition at line 13 of file kmeans.\-cpp.
+

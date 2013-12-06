@@ -1,0 +1,107 @@
+\hypertarget{find_contours_8cpp}{\section{src/+cv/find\-Contours.cpp \-File \-Reference}
+\label{find_contours_8cpp}\index{src/+cv/find\-Contours.\-cpp@{src/+cv/find\-Contours.\-cpp}}
+}
+
+
+mex interface for find\-Contours  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{find_contours_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{find_contours_8cpp_a6cf58264f0246471480f8b5333fd93de}{\-Contour\-Mode}
+\begin{DoxyCompactList}\small\item\em \-Mode of the contour retrieval algorithm for option processing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{find_contours_8cpp_a4ce91d93d84bb76aa47b3b89d7491693}{\-Contour\-Type}
+\begin{DoxyCompactList}\small\item\em \-Type of the contour approximation algorithm for option processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for find\-Contours \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2011 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{find_contours_8cpp_source}{find\-Contours.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{find_contours_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{find\-Contours.\-cpp@{find\-Contours.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!findContours.cpp@{find\-Contours.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{find_contours_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 34 of file find\-Contours.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{find_contours_8cpp_a6cf58264f0246471480f8b5333fd93de}{\index{find\-Contours.\-cpp@{find\-Contours.\-cpp}!\-Contour\-Mode@{\-Contour\-Mode}}
+\index{\-Contour\-Mode@{\-Contour\-Mode}!findContours.cpp@{find\-Contours.\-cpp}}
+\subsubsection[{\-Contour\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Contour\-Mode}}}\label{find_contours_8cpp_a6cf58264f0246471480f8b5333fd93de}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("External",cv::RETR_EXTERNAL)
+    ("List",    cv::RETR_LIST)
+    ("CComp",    cv::RETR_CCOMP)
+    ("Tree",    cv::RETR_TREE)
+\end{DoxyCode}
+
+
+\-Mode of the contour retrieval algorithm for option processing. 
+
+retrieve only the most external (top-\/level) contours retrieve all the contours without any hierarchical information retrieve the connected components (that can possibly be nested) retrieve all the contours and the whole hierarchy 
+
+\-Definition at line 13 of file find\-Contours.\-cpp.
+
+\hypertarget{find_contours_8cpp_a4ce91d93d84bb76aa47b3b89d7491693}{\index{find\-Contours.\-cpp@{find\-Contours.\-cpp}!\-Contour\-Type@{\-Contour\-Type}}
+\index{\-Contour\-Type@{\-Contour\-Type}!findContours.cpp@{find\-Contours.\-cpp}}
+\subsubsection[{\-Contour\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Contour\-Type}}}\label{find_contours_8cpp_a4ce91d93d84bb76aa47b3b89d7491693}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("None",        cv::CHAIN_APPROX_NONE)
+    ("Simple",        cv::CHAIN_APPROX_SIMPLE)
+    ("TC89_L1",        cv::CHAIN_APPROX_TC89_L1)
+    ("TC89_KCOS",    cv::CHAIN_APPROX_TC89_KCOS)
+\end{DoxyCode}
+
+
+\-Type of the contour approximation algorithm for option processing. 
+
+
+
+\-Definition at line 21 of file find\-Contours.\-cpp.
+

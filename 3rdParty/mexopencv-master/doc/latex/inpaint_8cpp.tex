@@ -1,0 +1,85 @@
+\hypertarget{inpaint_8cpp}{\section{src/+cv/inpaint.cpp \-File \-Reference}
+\label{inpaint_8cpp}\index{src/+cv/inpaint.\-cpp@{src/+cv/inpaint.\-cpp}}
+}
+
+
+mex interface for inpaint  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+{\ttfamily \#include \char`\"{}opencv2/photo/photo.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{inpaint_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{inpaint_8cpp_a363f6dd476ed981bc67e2d82475860fa}{\-Inpaint\-Type}
+\begin{DoxyCompactList}\small\item\em \-Inpainting algorithm types for option processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for inpaint \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{inpaint_8cpp_source}{inpaint.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{inpaint_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{inpaint.\-cpp@{inpaint.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!inpaint.cpp@{inpaint.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{inpaint_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 25 of file inpaint.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{inpaint_8cpp_a363f6dd476ed981bc67e2d82475860fa}{\index{inpaint.\-cpp@{inpaint.\-cpp}!\-Inpaint\-Type@{\-Inpaint\-Type}}
+\index{\-Inpaint\-Type@{\-Inpaint\-Type}!inpaint.cpp@{inpaint.\-cpp}}
+\subsubsection[{\-Inpaint\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Inpaint\-Type}}}\label{inpaint_8cpp_a363f6dd476ed981bc67e2d82475860fa}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("NS",        cv::INPAINT_NS)
+    ("Telea",    cv::INPAINT_TELEA)
+\end{DoxyCode}
+
+
+\-Inpainting algorithm types for option processing. 
+
+
+
+\-Definition at line 14 of file inpaint.\-cpp.
+

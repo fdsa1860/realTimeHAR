@@ -1,0 +1,54 @@
+\hypertarget{class_const_map}{\section{\-Const\-Map$<$ \-T, \-U $>$ \-Class \-Template \-Reference}
+\label{class_const_map}\index{\-Const\-Map$<$ T, U $>$@{\-Const\-Map$<$ T, U $>$}}
+}
+
+
+std\-::map wrapper with one-\/line initialization and lookup method.  
+
+
+
+
+{\ttfamily \#include $<$\-Mx\-Array.\-hpp$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_const_map_a1d86f17601daedfa9ed2925805ac0e03}{\hyperlink{class_const_map_a1d86f17601daedfa9ed2925805ac0e03}{\-Const\-Map} (const \-T \&key, const \-U \&val)}\label{class_const_map_a1d86f17601daedfa9ed2925805ac0e03}
+
+\begin{DoxyCompactList}\small\item\em \-Constructor with a single key-\/value pair. \end{DoxyCompactList}\item 
+\hypertarget{class_const_map_a67bed6f2e079b458118b60afc0fe1938}{\hyperlink{class_const_map}{\-Const\-Map}$<$ \-T, \-U $>$ \& \hyperlink{class_const_map_a67bed6f2e079b458118b60afc0fe1938}{operator()} (const \-T \&key, const \-U \&val)}\label{class_const_map_a67bed6f2e079b458118b60afc0fe1938}
+
+\begin{DoxyCompactList}\small\item\em \-Consecutive insertion operator. \end{DoxyCompactList}\item 
+\hypertarget{class_const_map_a1124f9bea1fbd2d3a40cead6560d5de2}{\hyperlink{class_const_map_a1124f9bea1fbd2d3a40cead6560d5de2}{operator std\-::map$<$ T, U $>$} ()}\label{class_const_map_a1124f9bea1fbd2d3a40cead6560d5de2}
+
+\begin{DoxyCompactList}\small\item\em \-Implicit converter to std\-::map. \end{DoxyCompactList}\item 
+\hypertarget{class_const_map_a160ff477dd3d840b4c614e94dcc2cde8}{\-U \hyperlink{class_const_map_a160ff477dd3d840b4c614e94dcc2cde8}{operator\mbox{[}$\,$\mbox{]}} (const \-T \&key) const }\label{class_const_map_a160ff477dd3d840b4c614e94dcc2cde8}
+
+\begin{DoxyCompactList}\small\item\em \-Lookup operator; fail if not found. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\subsubsection*{template$<$typename \-T, typename \-U$>$class Const\-Map$<$ T, U $>$}
+
+std\-::map wrapper with one-\/line initialization and lookup method. 
+
+\-Initialization 
+\begin{DoxyCode}
+ const ConstMap<std::string,int> BorderType = ConstMap<std::string,int>
+     ("Replicate",  cv::BORDER_REPLICATE)
+     ("Constant",   cv::BORDER_CONSTANT)
+     ("Reflect",    cv::BORDER_REFLECT);
+\end{DoxyCode}
+ \-Lookup 
+\begin{DoxyCode}
+ BorderType["Constant"] // => cv::BORDER_CONSTANT
+\end{DoxyCode}
+ 
+
+\-Definition at line 582 of file \-Mx\-Array.\-hpp.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_mx_array_8hpp}{\-Mx\-Array.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{distance_transform_8cpp}{\section{src/+cv/distance\-Transform.cpp \-File \-Reference}
+\label{distance_transform_8cpp}\index{src/+cv/distance\-Transform.\-cpp@{src/+cv/distance\-Transform.\-cpp}}
+}
+
+
+mex interface for distance\-Transform  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{distance_transform_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{distance_transform_8cpp_abf4a1dc4c40c005dbe761522a44a1fdf}{\-Dist\-Mask}
+\begin{DoxyCompactList}\small\item\em \-Mask size for distance transform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for distance\-Transform \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{distance_transform_8cpp_source}{distance\-Transform.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{distance_transform_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{distance\-Transform.\-cpp@{distance\-Transform.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!distanceTransform.cpp@{distance\-Transform.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{distance_transform_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 25 of file distance\-Transform.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{distance_transform_8cpp_abf4a1dc4c40c005dbe761522a44a1fdf}{\index{distance\-Transform.\-cpp@{distance\-Transform.\-cpp}!\-Dist\-Mask@{\-Dist\-Mask}}
+\index{\-Dist\-Mask@{\-Dist\-Mask}!distanceTransform.cpp@{distance\-Transform.\-cpp}}
+\subsubsection[{\-Dist\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Dist\-Mask}}}\label{distance_transform_8cpp_abf4a1dc4c40c005dbe761522a44a1fdf}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("3",CV_DIST_MASK_3)
+    ("5",CV_DIST_MASK_5)
+    ("Precise",CV_DIST_MASK_PRECISE)
+\end{DoxyCode}
+
+
+\-Mask size for distance transform. 
+
+
+
+\-Definition at line 13 of file distance\-Transform.\-cpp.
+

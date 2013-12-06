@@ -1,0 +1,85 @@
+\hypertarget{grab_cut_8cpp}{\section{src/+cv/grab\-Cut.cpp \-File \-Reference}
+\label{grab_cut_8cpp}\index{src/+cv/grab\-Cut.\-cpp@{src/+cv/grab\-Cut.\-cpp}}
+}
+
+
+mex interface for grab\-Cut  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grab_cut_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{grab_cut_8cpp_abad47c2319fcbf964a25f12827b838e3}{\-Grab\-Cut\-Type}
+\begin{DoxyCompactList}\small\item\em \-Grab\-Cut algorithm types for option processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for grab\-Cut \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{grab_cut_8cpp_source}{grab\-Cut.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{grab_cut_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{grab\-Cut.\-cpp@{grab\-Cut.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!grabCut.cpp@{grab\-Cut.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{grab_cut_8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side\\
+\hline
+\end{DoxyParams}
+\-This is the entry point of the function 
+
+\-Definition at line 27 of file grab\-Cut.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{grab_cut_8cpp_abad47c2319fcbf964a25f12827b838e3}{\index{grab\-Cut.\-cpp@{grab\-Cut.\-cpp}!\-Grab\-Cut\-Type@{\-Grab\-Cut\-Type}}
+\index{\-Grab\-Cut\-Type@{\-Grab\-Cut\-Type}!grabCut.cpp@{grab\-Cut.\-cpp}}
+\subsubsection[{\-Grab\-Cut\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Grab\-Cut\-Type}}}\label{grab_cut_8cpp_abad47c2319fcbf964a25f12827b838e3}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Rect",cv::GC_INIT_WITH_RECT)
+    ("Mask",cv::GC_INIT_WITH_MASK)
+    ("Eval",cv::GC_EVAL)
+\end{DoxyCode}
+
+
+\-Grab\-Cut algorithm types for option processing. 
+
+
+
+\-Definition at line 13 of file grab\-Cut.\-cpp.
+

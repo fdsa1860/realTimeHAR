@@ -1,0 +1,91 @@
+\hypertarget{_stereo_b_m___8cpp}{\section{src/+cv/private/\-Stereo\-B\-M\-\_\-.cpp \-File \-Reference}
+\label{_stereo_b_m___8cpp}\index{src/+cv/private/\-Stereo\-B\-M\-\_\-.\-cpp@{src/+cv/private/\-Stereo\-B\-M\-\_\-.\-cpp}}
+}
+
+
+mex interface for \-Stereo\-B\-M\-\_\-  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_stereo_b_m___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{_stereo_b_m___8cpp_a9610ecb44f21963e677e93ed3edbdecc}{\-Preset}
+\begin{DoxyCompactList}\small\item\em \-Methods for option processing. \end{DoxyCompactList}\item 
+\hypertarget{_stereo_b_m___8cpp_aecb073dc275e974b4e014dd9008cc0a7}{int \hyperlink{_stereo_b_m___8cpp_aecb073dc275e974b4e014dd9008cc0a7}{last\-\_\-id} = 0}\label{_stereo_b_m___8cpp_aecb073dc275e974b4e014dd9008cc0a7}
+
+\begin{DoxyCompactList}\small\item\em \-Last object id to allocate. \end{DoxyCompactList}\item 
+\hypertarget{_stereo_b_m___8cpp_ac0635c04d192e117acb43af34013f6d7}{map$<$ int, \-Stereo\-B\-M $>$ \hyperlink{_stereo_b_m___8cpp_ac0635c04d192e117acb43af34013f6d7}{obj\-\_\-}}\label{_stereo_b_m___8cpp_ac0635c04d192e117acb43af34013f6d7}
+
+\begin{DoxyCompactList}\small\item\em \-Object container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for \-Stereo\-B\-M\-\_\- \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{_stereo_b_m___8cpp_source}{\-Stereo\-B\-M\-\_\-.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{_stereo_b_m___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{\-Stereo\-B\-M\-\_\-.\-cpp@{\-Stereo\-B\-M\-\_\-.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!StereoBM_.cpp@{\-Stereo\-B\-M\-\_\-.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{_stereo_b_m___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 32 of file \-Stereo\-B\-M\-\_\-.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{_stereo_b_m___8cpp_a9610ecb44f21963e677e93ed3edbdecc}{\index{\-Stereo\-B\-M\-\_\-.\-cpp@{\-Stereo\-B\-M\-\_\-.\-cpp}!\-Preset@{\-Preset}}
+\index{\-Preset@{\-Preset}!StereoBM_.cpp@{\-Stereo\-B\-M\-\_\-.\-cpp}}
+\subsubsection[{\-Preset}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Preset}}}\label{_stereo_b_m___8cpp_a9610ecb44f21963e677e93ed3edbdecc}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Basic",    StereoBM::BASIC_PRESET)
+    ("FishEye",    StereoBM::FISH_EYE_PRESET)
+    ("Narrow",    StereoBM::NARROW_PRESET)
+\end{DoxyCode}
+
+
+\-Methods for option processing. 
+
+
+
+\-Definition at line 13 of file \-Stereo\-B\-M\-\_\-.\-cpp.
+

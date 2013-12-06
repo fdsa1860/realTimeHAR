@@ -1,0 +1,188 @@
+\hypertarget{mexopencv_8hpp}{\section{include/mexopencv.hpp \-File \-Reference}
+\label{mexopencv_8hpp}\index{include/mexopencv.\-hpp@{include/mexopencv.\-hpp}}
+}
+
+
+\-Global constant definitions.  
+
+
+{\ttfamily \#include \char`\"{}\-Mx\-Array.\-hpp\char`\"{}}\*
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_a00356b723e15328be56a3a62edd0a0d8}{\-Border\-Type}
+\begin{DoxyCompactList}\small\item\em \-Border\-Type map for option processing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_a382f451ace31d043ef192744a439053b}{\-Inter\-Type}
+\begin{DoxyCompactList}\small\item\em \-Interpolation type map for option processing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_ad0ac4947faeb3410365e6eac8604c964}{\-Thresh\-Type}
+\begin{DoxyCompactList}\small\item\em \-Thresholding type map for option processing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_a9e21369cd3329a2eafe1e8a530eeda9f}{\-Dist\-Type}
+\begin{DoxyCompactList}\small\item\em \-Distance types for \-Distance \-Transform and \-M-\/estimators. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_a6b6f68c1991bc331ccd7d3d2d4886502}{\-Line\-Type}
+\begin{DoxyCompactList}\small\item\em \-Line type for drawing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_a01fe0cabb6a84344ab199d2d896fb982}{\-Font\-Face}
+\begin{DoxyCompactList}\small\item\em \-Font faces for drawing. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{mexopencv_8hpp_af088b3d7445aaa5262efb7e42d6a0cf3}{\-Font\-Style}
+\begin{DoxyCompactList}\small\item\em \-Font styles for drawing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Global constant definitions. \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012
+\end{DoxyDate}
+\-The header file for a \-Matlab mex function that uses \-Open\-C\-V library. \-The file includes definition of \hyperlink{class_mx_array}{\-Mx\-Array} class that converts between mx\-Array and a couple of std\-:\-: and cv\-:\-: data types including cv\-::\-Mat. 
+
+\-Definition in file \hyperlink{mexopencv_8hpp_source}{mexopencv.\-hpp}.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{mexopencv_8hpp_a00356b723e15328be56a3a62edd0a0d8}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Border\-Type@{\-Border\-Type}}
+\index{\-Border\-Type@{\-Border\-Type}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Border\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Border\-Type}}}\label{mexopencv_8hpp_a00356b723e15328be56a3a62edd0a0d8}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Replicate",   cv::BORDER_REPLICATE)
+    ("Constant",    cv::BORDER_CONSTANT)
+    ("Reflect",     cv::BORDER_REFLECT)
+    ("Wrap",        cv::BORDER_WRAP)
+    ("Reflect101",  cv::BORDER_REFLECT_101)
+    ("Transparent", cv::BORDER_TRANSPARENT)
+    ("Default",     cv::BORDER_DEFAULT)
+    ("Isolated",    cv::BORDER_ISOLATED)
+\end{DoxyCode}
+
+
+\-Border\-Type map for option processing. 
+
+
+
+\-Definition at line 20 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_a9e21369cd3329a2eafe1e8a530eeda9f}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Dist\-Type@{\-Dist\-Type}}
+\index{\-Dist\-Type@{\-Dist\-Type}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Dist\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Dist\-Type}}}\label{mexopencv_8hpp_a9e21369cd3329a2eafe1e8a530eeda9f}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("User",   CV_DIST_USER)
+    ("L1",     CV_DIST_L1)
+    ("L2",     CV_DIST_L2)
+    ("C",      CV_DIST_C)
+    ("L12",    CV_DIST_L12)
+    ("Fair",   CV_DIST_FAIR)
+    ("Welsch", CV_DIST_WELSCH)
+    ("Huber",  CV_DIST_HUBER)
+\end{DoxyCode}
+
+
+\-Distance types for \-Distance \-Transform and \-M-\/estimators. 
+
+
+
+\-Definition at line 54 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_a01fe0cabb6a84344ab199d2d896fb982}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Font\-Face@{\-Font\-Face}}
+\index{\-Font\-Face@{\-Font\-Face}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Font\-Face}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Font\-Face}}}\label{mexopencv_8hpp_a01fe0cabb6a84344ab199d2d896fb982}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("HersheySimplex",       cv::FONT_HERSHEY_SIMPLEX)
+    ("HersheyPlain",         cv::FONT_HERSHEY_PLAIN)
+    ("HersheyDuplex",        cv::FONT_HERSHEY_DUPLEX)
+    ("HersheyComplex",       cv::FONT_HERSHEY_COMPLEX)
+    ("HersheyTriplex",       cv::FONT_HERSHEY_TRIPLEX)
+    ("HersheyComplexSmall",  cv::FONT_HERSHEY_COMPLEX_SMALL)
+    ("HersheyScriptSimplex", cv::FONT_HERSHEY_SCRIPT_SIMPLEX)
+    ("HersheyScriptComplex", cv::FONT_HERSHEY_SCRIPT_COMPLEX)
+\end{DoxyCode}
+
+
+\-Font faces for drawing. 
+
+
+
+\-Definition at line 73 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_af088b3d7445aaa5262efb7e42d6a0cf3}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Font\-Style@{\-Font\-Style}}
+\index{\-Font\-Style@{\-Font\-Style}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Font\-Style}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Font\-Style}}}\label{mexopencv_8hpp_af088b3d7445aaa5262efb7e42d6a0cf3}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Regular", 0)
+    ("Italic",  cv::FONT_ITALIC)
+\end{DoxyCode}
+
+
+\-Font styles for drawing. 
+
+
+
+\-Definition at line 85 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_a382f451ace31d043ef192744a439053b}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Inter\-Type@{\-Inter\-Type}}
+\index{\-Inter\-Type@{\-Inter\-Type}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Inter\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Inter\-Type}}}\label{mexopencv_8hpp_a382f451ace31d043ef192744a439053b}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Nearest",  cv::INTER_NEAREST)
+    ("Linear",   cv::INTER_LINEAR)
+    ("Cubic",    cv::INTER_CUBIC)
+    ("Area",     cv::INTER_AREA)
+    ("Lanczos4", cv::INTER_LANCZOS4)
+    ("Max",      cv::INTER_MAX)
+\end{DoxyCode}
+
+
+\-Interpolation type map for option processing. 
+
+nearest neighbor interpolation bilinear interpolation bicubic interpolation area-\/based (or super) interpolation \-Lanczos interpolation over 8x8 neighborhood 
+
+\-Definition at line 32 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_a6b6f68c1991bc331ccd7d3d2d4886502}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Line\-Type@{\-Line\-Type}}
+\index{\-Line\-Type@{\-Line\-Type}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Line\-Type}}}\label{mexopencv_8hpp_a6b6f68c1991bc331ccd7d3d2d4886502}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("8",  8)
+    ("4",  4)
+    ("AA", CV_AA)
+\end{DoxyCode}
+
+
+\-Line type for drawing. 
+
+
+
+\-Definition at line 66 of file mexopencv.\-hpp.
+
+\hypertarget{mexopencv_8hpp_ad0ac4947faeb3410365e6eac8604c964}{\index{mexopencv.\-hpp@{mexopencv.\-hpp}!\-Thresh\-Type@{\-Thresh\-Type}}
+\index{\-Thresh\-Type@{\-Thresh\-Type}!mexopencv.hpp@{mexopencv.\-hpp}}
+\subsubsection[{\-Thresh\-Type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Thresh\-Type}}}\label{mexopencv_8hpp_ad0ac4947faeb3410365e6eac8604c964}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("Binary",    cv::THRESH_BINARY)
+    ("BinaryInv", cv::THRESH_BINARY_INV)
+    ("Trunc",     cv::THRESH_TRUNC)
+    ("ToZero",    cv::THRESH_TOZERO)
+    ("ToZeroInv", cv::THRESH_TOZERO_INV)
+    ("Mask",      cv::THRESH_MASK)
+\end{DoxyCode}
+
+
+\-Thresholding type map for option processing. 
+
+
+
+\-Definition at line 43 of file mexopencv.\-hpp.
+

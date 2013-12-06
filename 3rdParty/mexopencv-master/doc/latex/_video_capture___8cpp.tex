@@ -1,0 +1,107 @@
+\hypertarget{_video_capture___8cpp}{\section{src/+cv/private/\-Video\-Capture\-\_\-.cpp \-File \-Reference}
+\label{_video_capture___8cpp}\index{src/+cv/private/\-Video\-Capture\-\_\-.\-cpp@{src/+cv/private/\-Video\-Capture\-\_\-.\-cpp}}
+}
+
+
+mex interface for \-Video\-Capture\-\_\-  
+
+
+{\ttfamily \#include \char`\"{}mexopencv.\-hpp\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_video_capture___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{mex\-Function} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Main entry called from \-Matlab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_video_capture___8cpp_aecb073dc275e974b4e014dd9008cc0a7}{int \hyperlink{_video_capture___8cpp_aecb073dc275e974b4e014dd9008cc0a7}{last\-\_\-id} = 0}\label{_video_capture___8cpp_aecb073dc275e974b4e014dd9008cc0a7}
+
+\begin{DoxyCompactList}\small\item\em \-Last object id to allocate. \end{DoxyCompactList}\item 
+\hypertarget{_video_capture___8cpp_a9cf7e9dc58f9059cdec9b3157afd244b}{map$<$ int, \-Video\-Capture $>$ \hyperlink{_video_capture___8cpp_a9cf7e9dc58f9059cdec9b3157afd244b}{obj\-\_\-}}\label{_video_capture___8cpp_a9cf7e9dc58f9059cdec9b3157afd244b}
+
+\begin{DoxyCompactList}\small\item\em \-Object container. \end{DoxyCompactList}\item 
+const \hyperlink{class_const_map}{\-Const\-Map}$<$ std\-::string, int $>$ \hyperlink{_video_capture___8cpp_a780ea4941d1f9f0c878f988e4227b77e}{\-Cap\-Prop}
+\begin{DoxyCompactList}\small\item\em \-Capture \-Property map for option processing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+mex interface for \-Video\-Capture\-\_\- \begin{DoxyAuthor}{\-Author}
+\-Kota \-Yamaguchi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+2012 
+\end{DoxyDate}
+
+
+\-Definition in file \hyperlink{_video_capture___8cpp_source}{\-Video\-Capture\-\_\-.\-cpp}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{_video_capture___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}{\index{\-Video\-Capture\-\_\-.\-cpp@{\-Video\-Capture\-\_\-.\-cpp}!mex\-Function@{mex\-Function}}
+\index{mex\-Function@{mex\-Function}!VideoCapture_.cpp@{\-Video\-Capture\-\_\-.\-cpp}}
+\subsubsection[{mex\-Function}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mex\-Function} (
+\begin{DoxyParamCaption}
+\item[{int}]{nlhs, }
+\item[{mx\-Array $\ast$}]{plhs\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{nrhs, }
+\item[{const mx\-Array $\ast$}]{prhs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{_video_capture___8cpp_a6a215cbfde54f82a3ce599228fc3fce5}
+
+
+\-Main entry called from \-Matlab. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em nlhs} & number of left-\/hand-\/side arguments \\
+\hline
+{\em plhs} & pointers to mx\-Arrays in the left-\/hand-\/side \\
+\hline
+{\em nrhs} & number of right-\/hand-\/side arguments \\
+\hline
+{\em prhs} & pointers to mx\-Arrays in the right-\/hand-\/side \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 49 of file \-Video\-Capture\-\_\-.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{_video_capture___8cpp_a780ea4941d1f9f0c878f988e4227b77e}{\index{\-Video\-Capture\-\_\-.\-cpp@{\-Video\-Capture\-\_\-.\-cpp}!\-Cap\-Prop@{\-Cap\-Prop}}
+\index{\-Cap\-Prop@{\-Cap\-Prop}!VideoCapture_.cpp@{\-Video\-Capture\-\_\-.\-cpp}}
+\subsubsection[{\-Cap\-Prop}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-Const\-Map}$<$std\-::string,int$>$ {\bf \-Cap\-Prop}}}\label{_video_capture___8cpp_a780ea4941d1f9f0c878f988e4227b77e}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ ConstMap<std::string,int>
+    ("PosMsec",CV_CAP_PROP_POS_MSEC)  
+    ("PosFrames",CV_CAP_PROP_POS_FRAMES)  
+    ("AVIRatio",CV_CAP_PROP_POS_AVI_RATIO)  
+    ("FrameWidth",CV_CAP_PROP_FRAME_WIDTH)  
+    ("FrameHeight",CV_CAP_PROP_FRAME_HEIGHT)  
+    ("FPS",CV_CAP_PROP_FPS)  
+    ("FourCC",CV_CAP_PROP_FOURCC)  
+    ("FrameCount",CV_CAP_PROP_FRAME_COUNT)  
+    ("Format",CV_CAP_PROP_FORMAT)  
+    ("Mode",CV_CAP_PROP_MODE)  
+    ("Brightness",CV_CAP_PROP_BRIGHTNESS)  
+    ("Contrast",CV_CAP_PROP_CONTRAST)  
+    ("Saturation",CV_CAP_PROP_SATURATION)  
+    ("Hue",CV_CAP_PROP_HUE)  
+    ("Gain",CV_CAP_PROP_GAIN)  
+    ("Exposure",CV_CAP_PROP_EXPOSURE)  
+    ("ConvertRGB",CV_CAP_PROP_CONVERT_RGB)  
+    
+    ("Rectification",CV_CAP_PROP_RECTIFICATION)
+\end{DoxyCode}
+
+
+\-Capture \-Property map for option processing. 
+
+
+
+\-Definition at line 20 of file \-Video\-Capture\-\_\-.\-cpp.
+
