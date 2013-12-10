@@ -7,6 +7,8 @@ addpath(genpath('../3rdParty/mexopencv-master'));
 % Set up camera
 camera = cv.VideoCapture;
 pause(3); % Necessary in some environment. See help cv.VideoCapture
+camera.set('FrameWidth',320);
+camera.set('FrameHeight',240);
 
 % Set up display window
 window = figure('KeyPressFcn',@(obj,evt)setappdata(obj,'flag',true));
@@ -18,11 +20,10 @@ vidObj.FrameRate = 25;
 open(vidObj);
 
 counter = 0;
-maxCount = 400;
+maxCount = 200;
 while true
     % Grab and preprocess an image
     im = camera.read;
-    im = imresize(im,0.5);
     
     % Draw results
     imshow(im);drawnow;
