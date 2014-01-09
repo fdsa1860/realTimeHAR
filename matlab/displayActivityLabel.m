@@ -26,7 +26,7 @@ end
 
 figure;
 axis([0 100 0 100]);
-text(50,50,msg,'Color','g','FontSize',50,'HorizontalAlignment','center');
+text(50,50,msg,'Color','r','FontSize',70,'HorizontalAlignment','center');
 axis off;
 
 end
