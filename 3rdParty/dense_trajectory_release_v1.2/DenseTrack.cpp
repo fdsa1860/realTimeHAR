@@ -14,12 +14,17 @@ int main(int argc, char** argv)
 	VideoCapture capture;
 	char* video = argv[1];
 	int flag = arg_parse(argc, argv);
-	capture.open(video);
+//	capture.open(video);
+	capture.open(0);
 
 	if(!capture.isOpened()) {
 		fprintf(stderr, "Could not initialize capturing..\n");
 		return -1;
 	}
+	
+	capture.set(CV_CAP_PROP_FRAME_WIDTH,320);
+	capture.set(CV_CAP_PROP_FRAME_HEIGHT,240);
+//	capture.set(CV_CAP_PROP_FPS, 10);
 
 	int frame_num = 0;
 	TrackInfo trackInfo;
@@ -27,11 +32,11 @@ int main(int argc, char** argv)
 
 	InitTrackInfo(&trackInfo, track_length, init_gap);
 
-	SeqInfo seqInfo;
-	InitSeqInfo(&seqInfo, video);
+//	SeqInfo seqInfo;
+//	InitSeqInfo(&seqInfo, video);
 
-	if(flag)
-		seqInfo.length = end_frame - start_frame + 1;
+//	if(flag)
+//		seqInfo.length = end_frame - start_frame + 1;
 
 //	fprintf(stderr, "video size, length: %d, width: %d, height: %d\n", seqInfo.length, seqInfo.width, seqInfo.height);
 
@@ -205,6 +210,7 @@ int main(int argc, char** argv)
 			imshow( "DenseTrack", image);
 			c = cvWaitKey(3);
 			if((char)c == 27) break;
+			if(frame_num == end_frame) break;
 		}
 	}
 

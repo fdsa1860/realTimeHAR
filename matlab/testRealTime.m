@@ -8,8 +8,12 @@ clear;clc;close all;
 C = 10;
 G = 1e-4;
 
-getVideo;
+pause(5)
+
+% getVideo;
+tic
 genTrajectory;
+toc
 
 addpath(genpath('../3rdParty/hankelet-master/hankelet-master'));
 addpath(genpath(getProjectBaseFolder));
