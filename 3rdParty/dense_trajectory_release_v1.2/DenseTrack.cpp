@@ -136,8 +136,8 @@ int main(int argc, char** argv)
 				iTrack->addPoint(point);
 
 				// draw the trajectories at the first scale
-				if(show_track == 1 && iScale == 0)
-					DrawTrack(iTrack->point, iTrack->index, fscales[iScale], image);
+//				if(show_track == 1 && iScale == 0)
+//					DrawTrack(iTrack->point, iTrack->index, fscales[iScale], image);
 
 				// if the trajectory achieves the maximal length
 				if(iTrack->index >= trackInfo.length) {

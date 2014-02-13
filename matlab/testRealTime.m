@@ -8,7 +8,23 @@ clear;clc;close all;
 C = 10;
 G = 1e-4;
 
-pause(5)
+% acquire background
+FrameWidth = 320;
+FrameHeight = 240;
+f = figure;
+axis([0 FrameWidth 0 FrameHeight]);
+axis off;
+h = text(FrameWidth/2,FrameHeight/2,num2str(3),'Color','r','FontSize',70,'HorizontalAlignment','center');
+pause(1);
+for i=2:-1:0
+    set(h,'string',num2str(i));
+    pause(1)
+end
+set(h,'string','start','Color','g');
+pause(1)
+close(f);
+pause(0.01)
+
 
 % getVideo;
 tic
@@ -31,13 +47,13 @@ Xm = kron(ones(size(X,1)/2,1),[xm;ym]);
 X = X - Xm;
 
 % load cluster centers
-load('../model/kmeansWords300_action01_06_person01_26_scene01_04_20131210t.mat');
+load('../model/kmeansWords100_action01_06_person01_26_scene010304_20140211t.mat');
 
 % get hankelet features
 [~, ~, hFeat] = find_weight_labels_df_HHp_newProtocal({trainCenter{3}},X, params);
 
 addpath('/home/xikang/research/code/kthActivity/3rdParty/libsvm-2.9-dense_chi_square_mat');
-load('../model/svmChi2_words300_action01_06_person01_26_scene01_04_20131210t');
+load('../model/svmChi2_words100_action01_06_person01_26_scene010304_20140211t');
 for i=1:length(svmModel)
     [predict_label, ~, ~] = svmpredict_chi2(0, hFeat, svmModel{i});
     predict_label
