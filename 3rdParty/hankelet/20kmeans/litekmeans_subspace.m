@@ -37,9 +37,10 @@ XInfo.w = [ones(1, 2 * m) 2 * ones(1, length(2*m+1 : size(XInfo.XHHp, 1)))];
 
 count = 1;
 % matlabpool open
-pool_turner;
+% pool_turner;
 while any(label ~= last) && count <= MaxInteration
     [~,~,label] = unique(label);   % remove empty clusters
+    label = label';
     k = length(unique(label));      % Chang the number of clusters accordingly
     fprintf('cluster #: %d\n', k);
     E = sparse(1:n,label,1,n,k,n);  % transform label into indicator matrix
@@ -56,7 +57,7 @@ while any(label ~= last) && count <= MaxInteration
     writenum2(count);
     count = count + 1;
 end
-matlabpool close
+% matlabpool close
 
 display(num2str(std(sigmaBatch(1:k, :))));
 

@@ -1,4 +1,5 @@
 *~
+.DS_STORE
 *.avi
 expData/
 .build_release/
